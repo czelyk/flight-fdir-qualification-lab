@@ -1,0 +1,1 @@
+PASS: qualification, stale latch, explicit epoch, clearing, duplicates, clock/sequence wrap, saturation and invalid configuration

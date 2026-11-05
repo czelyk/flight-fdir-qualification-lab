@@ -1,0 +1,27 @@
+{
+  "compiler": "clang version 19.1.7 (https://github.com/ziglang/zig-bootstrap de1b01a8c1dddf75a560123ac1c2ab182b4830da)",
+  "library": "C:\\Users\\Ahmet\\Desktop\\flight-fdir-qualification-lab\\runs\\20261104T121016Z_666a89\\fq.dll",
+  "command": [
+    "C:\\Users\\Ahmet\\Desktop\\flight-config-transaction-lab\\.tools\\zig-x86_64-windows-0.14.1\\zig.exe",
+    "cc",
+    "-std=c99",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-Iinclude",
+    "-shared",
+    "src/fq_monitor.c",
+    "tests/bridge.c",
+    "-o",
+    "C:\\Users\\Ahmet\\Desktop\\flight-fdir-qualification-lab\\runs\\20261104T121016Z_666a89\\fq.dll"
+  ],
+  "source_sha256": {
+    "include/fq_monitor.h": "77cb586af796202a23f1935a570915a6c2ded759e4b5d551f014c839fe19b147",
+    "src/fq_monitor.c": "8584f6b3865fa890a1a02a0e76cd90d59b7ff17ff97ab4c7aeb96bf7cad1c3af",
+    "tests/arm_fixture.c": "064b296578d67ce860b03e809f105c3fc7b645bce07a0165776c15f3328611d1",
+    "tests/bridge.c": "749ad5fe9b02bbc4d21e197c6438308bdee8daa512f9c5548b7fa5b6b11ebb3c",
+    "tests/unit.c": "ff933aa06ccaba93d5e4ff1e39221eb24f8523b7a10c0688e1ff04771b9e40c1"
+  },
+  "physical_tests": false
+}

@@ -1,0 +1,19 @@
+Start testing: Nov 04 15:07 Turkey Standard Time
+----------------------------------------------------------
+1/1 Testing: c_boundary_unit_tests
+1/1 Test: c_boundary_unit_tests
+Command: "C:/Users/Ahmet/Desktop/flight-fdir-qualification-lab/build-cmake/fq_unit.exe"
+Directory: C:/Users/Ahmet/Desktop/flight-fdir-qualification-lab/build-cmake
+"c_boundary_unit_tests" start time: Nov 04 15:07 Turkey Standard Time
+Output:
+----------------------------------------------------------
+PASS: qualification, stale latch, explicit epoch, clearing, duplicates, clock/sequence wrap, saturation and invalid configuration
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"c_boundary_unit_tests" end time: Nov 04 15:07 Turkey Standard Time
+"c_boundary_unit_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 04 15:07 Turkey Standard Time

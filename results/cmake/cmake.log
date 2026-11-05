@@ -1,0 +1,26 @@
+["cmake", "-S", "C:\\Users\\Ahmet\\Desktop\\flight-fdir-qualification-lab", "-B", "C:\\Users\\Ahmet\\Desktop\\flight-fdir-qualification-lab\\build-cmake", "-G", "Ninja", "-DCMAKE_MAKE_PROGRAM=C:\\Users\\Ahmet\\Desktop\\flight-config-transaction-lab\\.venv\\Scripts\\ninja.exe", "-DCMAKE_TOOLCHAIN_FILE=C:\\Users\\Ahmet\\Desktop\\flight-fdir-qualification-lab\\cmake\\zig-windows.cmake", "-DZIG_EXECUTABLE=C:\\Users\\Ahmet\\Desktop\\flight-config-transaction-lab\\.tools\\zig-x86_64-windows-0.14.1\\zig.exe", "-DCMAKE_BUILD_TYPE=Debug"]
+-- The C compiler identification is Clang 19.1.7
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Users/Ahmet/Desktop/flight-config-transaction-lab/.tools/zig-x86_64-windows-0.14.1/zig.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done (2.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: C:/Users/Ahmet/Desktop/flight-fdir-qualification-lab/build-cmake
+["cmake", "--build", "C:\\Users\\Ahmet\\Desktop\\flight-fdir-qualification-lab\\build-cmake"]
+[1/7] Building C object CMakeFiles/fq_bridge.dir/tests/bridge.c.obj
+[2/7] Building C object CMakeFiles/fq_monitor.dir/src/fq_monitor.c.obj
+[3/7] Building C object CMakeFiles/fq_worker_example.dir/examples/worker.c.obj
+[4/7] Building C object CMakeFiles/fq_unit.dir/tests/unit.c.obj
+[5/7] Linking C static library libfq_monitor.a
+[6/7] Linking C shared library libfq_bridge.dll
+[7/7] Linking C executable fq_unit.exe
+["ctest", "--test-dir", "C:\\Users\\Ahmet\\Desktop\\flight-fdir-qualification-lab\\build-cmake", "--output-on-failure"]
+Test project C:/Users/Ahmet/Desktop/flight-fdir-qualification-lab/build-cmake
+    Start 1: c_boundary_unit_tests
+1/1 Test #1: c_boundary_unit_tests ............   Passed    0.09 sec
+
+100% tests passed out of 1
+
+Total Test time (real) =   0.12 sec

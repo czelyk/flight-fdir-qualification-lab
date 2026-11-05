@@ -1,0 +1,11402 @@
+[
+  {
+    "profile": 0,
+    "name": "one_sample_then_silence",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 0,
+        "now": 7,
+        "acquired": 7,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "one_sample_then_silence",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 0,
+        "now": 7,
+        "acquired": 7,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        2,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "one_sample_then_silence",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 0,
+        "now": 7,
+        "acquired": 7,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "same_tick_burst",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 1,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 2,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "same_tick_burst",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 1,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 2,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        3,
+        3,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "same_tick_burst",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 1,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 2,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        3,
+        3,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "qualified_then_stale",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 11,
+        "acquired": 11,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        2,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "qualified_then_stale",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 11,
+        "acquired": 11,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        2,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "qualified_then_stale",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 11,
+        "acquired": 11,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        2,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "gap_then_new_bad",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 1,
+        "acquired": 1,
+        "sequence": 1,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 5,
+        "acquired": 5,
+        "sequence": 5,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 7,
+        "acquired": 7,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "gap_then_new_bad",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 1,
+        "acquired": 1,
+        "sequence": 1,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 5,
+        "acquired": 5,
+        "sequence": 5,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 7,
+        "acquired": 7,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "gap_then_new_bad",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 1,
+        "acquired": 1,
+        "sequence": 1,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 5,
+        "acquired": 5,
+        "sequence": 5,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 7,
+        "acquired": 7,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        3,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "neutral_breaks_run",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 15
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 6,
+        "acquired": 6,
+        "sequence": 6,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 8,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "neutral_breaks_run",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 15
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 6,
+        "acquired": 6,
+        "sequence": 6,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 8,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "neutral_breaks_run",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 15
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 6,
+        "acquired": 6,
+        "sequence": 6,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 8,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "stale_good_does_not_clear",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 10,
+        "acquired": 1,
+        "sequence": 10,
+        "value": 5
+      },
+      {
+        "kind": 0,
+        "now": 11,
+        "acquired": 11,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        2,
+        0,
+        0,
+        0,
+        3,
+        1,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "stale_good_does_not_clear",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 10,
+        "acquired": 1,
+        "sequence": 10,
+        "value": 5
+      },
+      {
+        "kind": 0,
+        "now": 11,
+        "acquired": 11,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        2,
+        0,
+        0,
+        0,
+        3,
+        1,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "stale_good_does_not_clear",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 10,
+        "acquired": 1,
+        "sequence": 10,
+        "value": 5
+      },
+      {
+        "kind": 0,
+        "now": 11,
+        "acquired": 11,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        2,
+        0,
+        0,
+        0,
+        3,
+        1,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "clear_requires_evidence",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 5,
+        "acquired": 5,
+        "sequence": 5,
+        "value": 5
+      },
+      {
+        "kind": 0,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 1,
+        "now": 9,
+        "acquired": 9,
+        "sequence": 9,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 11,
+        "acquired": 11,
+        "sequence": 11,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 12,
+        "acquired": 12,
+        "sequence": 12,
+        "value": 5
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        0,
+        1,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        0,
+        1,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        4,
+        2,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        6,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        7,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "clear_requires_evidence",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 5,
+        "acquired": 5,
+        "sequence": 5,
+        "value": 5
+      },
+      {
+        "kind": 0,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 1,
+        "now": 9,
+        "acquired": 9,
+        "sequence": 9,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 11,
+        "acquired": 11,
+        "sequence": 11,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 12,
+        "acquired": 12,
+        "sequence": 12,
+        "value": 5
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        0,
+        1,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        6,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        7,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "clear_requires_evidence",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 5,
+        "acquired": 5,
+        "sequence": 5,
+        "value": 5
+      },
+      {
+        "kind": 0,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 1,
+        "now": 9,
+        "acquired": 9,
+        "sequence": 9,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 11,
+        "acquired": 11,
+        "sequence": 11,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 12,
+        "acquired": 12,
+        "sequence": 12,
+        "value": 5
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        0,
+        1,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        0,
+        1,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        0,
+        1,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        6,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        7,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "nominal_cadence_agreement",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 6,
+        "acquired": 6,
+        "sequence": 6,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 8,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 10,
+        "acquired": 10,
+        "sequence": 10,
+        "value": 5
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        0,
+        1,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        6,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "nominal_cadence_agreement",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 6,
+        "acquired": 6,
+        "sequence": 6,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 8,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 10,
+        "acquired": 10,
+        "sequence": 10,
+        "value": 5
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        0,
+        1,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        6,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "nominal_cadence_agreement",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 6,
+        "acquired": 6,
+        "sequence": 6,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 8,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 10,
+        "acquired": 10,
+        "sequence": 10,
+        "value": 5
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        0,
+        1,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        6,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "producer_epoch_retains_alarm",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 3,
+        "now": 5,
+        "acquired": 5,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 1,
+        "now": 6,
+        "acquired": 6,
+        "sequence": 0,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 1,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 9,
+        "acquired": 9,
+        "sequence": 2,
+        "value": 5
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        0,
+        1,
+        4,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        5,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        6,
+        0,
+        1,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "producer_epoch_retains_alarm",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 3,
+        "now": 5,
+        "acquired": 5,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 1,
+        "now": 6,
+        "acquired": 6,
+        "sequence": 0,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 1,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 9,
+        "acquired": 9,
+        "sequence": 2,
+        "value": 5
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        0,
+        1,
+        4,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        5,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        6,
+        0,
+        1,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "producer_epoch_retains_alarm",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 3,
+        "now": 5,
+        "acquired": 5,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 1,
+        "now": 6,
+        "acquired": 6,
+        "sequence": 0,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 1,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 9,
+        "acquired": 9,
+        "sequence": 2,
+        "value": 5
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        0,
+        1,
+        4,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        5,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        6,
+        0,
+        1,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "pre_epoch_queue_item",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 3,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 1,
+        "now": 3,
+        "acquired": 1,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 0,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        2,
+        1,
+        1,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "pre_epoch_queue_item",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 3,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 1,
+        "now": 3,
+        "acquired": 1,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 0,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        2,
+        1,
+        1,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "pre_epoch_queue_item",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 3,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 1,
+        "now": 3,
+        "acquired": 1,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 0,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        2,
+        1,
+        1,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "sequence_wrap",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 4294967294,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 4294967295,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 0,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "sequence_wrap",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 4294967294,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 4294967295,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 0,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "sequence_wrap",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 4294967294,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 4294967295,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 0,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "clock_wrap",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 4294967293,
+        "acquired": 4294967293,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4294967295,
+        "acquired": 4294967295,
+        "sequence": 1,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 1,
+        "acquired": 1,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        2,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "clock_wrap",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 4294967293,
+        "acquired": 4294967293,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4294967295,
+        "acquired": 4294967295,
+        "sequence": 1,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 1,
+        "acquired": 1,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        2,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "clock_wrap",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 4294967293,
+        "acquired": 4294967293,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4294967295,
+        "acquired": 4294967295,
+        "sequence": 1,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 1,
+        "acquired": 1,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        2,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "future_acquisition",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 1,
+        "acquired": 2,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 1,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "future_acquisition",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 1,
+        "acquired": 2,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 1,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "future_acquisition",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 1,
+        "acquired": 2,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 1,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "clock_regression",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 3,
+        "acquired": 3,
+        "sequence": 3,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        -2,
+        0,
+        3,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        2,
+        0,
+        0,
+        1
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "clock_regression",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 3,
+        "acquired": 3,
+        "sequence": 3,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        -2,
+        0,
+        3,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        2,
+        0,
+        0,
+        1
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "clock_regression",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 3,
+        "acquired": 3,
+        "sequence": 3,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        -2,
+        0,
+        3,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        2,
+        0,
+        0,
+        1
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "half_range_ambiguity",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 2147483648,
+        "acquired": 2147483648,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        -2,
+        0,
+        3,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "half_range_ambiguity",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 2147483648,
+        "acquired": 2147483648,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        -2,
+        0,
+        3,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "half_range_ambiguity",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 2147483648,
+        "acquired": 2147483648,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        -2,
+        0,
+        3,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "invalid_quality_preserves_alarm",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 2,
+        "now": 5,
+        "acquired": 5,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 1,
+        "now": 6,
+        "acquired": 6,
+        "sequence": 6,
+        "value": 5
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        3,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        0,
+        1,
+        4,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "invalid_quality_preserves_alarm",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 2,
+        "now": 5,
+        "acquired": 5,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 1,
+        "now": 6,
+        "acquired": 6,
+        "sequence": 6,
+        "value": 5
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        3,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        0,
+        1,
+        4,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "invalid_quality_preserves_alarm",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 2,
+        "now": 5,
+        "acquired": 5,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 1,
+        "now": 6,
+        "acquired": 6,
+        "sequence": 6,
+        "value": 5
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        3,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        0,
+        1,
+        4,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "out_of_order_source",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 3,
+        "acquired": 1,
+        "sequence": 1,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 3,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        1,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "out_of_order_source",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 3,
+        "acquired": 1,
+        "sequence": 1,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 3,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        1,
+        3,
+        2,
+        2,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        1,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "out_of_order_source",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 3,
+        "acquired": 1,
+        "sequence": 1,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 3,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        1,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "boundary_age",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 6,
+        "acquired": 6,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 0,
+        "now": 7,
+        "acquired": 7,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "boundary_age",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 6,
+        "acquired": 6,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 0,
+        "now": 7,
+        "acquired": 7,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        2,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "boundary_age",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 6,
+        "acquired": 6,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 0,
+        "now": 7,
+        "acquired": 7,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "threshold_endpoints",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 20
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 20
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 20
+      },
+      {
+        "kind": 1,
+        "now": 5,
+        "acquired": 5,
+        "sequence": 5,
+        "value": 10
+      },
+      {
+        "kind": 1,
+        "now": 7,
+        "acquired": 7,
+        "sequence": 7,
+        "value": 10
+      },
+      {
+        "kind": 1,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 8,
+        "value": 10
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        0,
+        1,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        6,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "threshold_endpoints",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 20
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 20
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 20
+      },
+      {
+        "kind": 1,
+        "now": 5,
+        "acquired": 5,
+        "sequence": 5,
+        "value": 10
+      },
+      {
+        "kind": 1,
+        "now": 7,
+        "acquired": 7,
+        "sequence": 7,
+        "value": 10
+      },
+      {
+        "kind": 1,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 8,
+        "value": 10
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        0,
+        1,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        6,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 0,
+    "name": "threshold_endpoints",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 20
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 20
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 20
+      },
+      {
+        "kind": 1,
+        "now": 5,
+        "acquired": 5,
+        "sequence": 5,
+        "value": 10
+      },
+      {
+        "kind": 1,
+        "now": 7,
+        "acquired": 7,
+        "sequence": 7,
+        "value": 10
+      },
+      {
+        "kind": 1,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 8,
+        "value": 10
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        0,
+        1,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        6,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "one_sample_then_silence",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 0,
+        "now": 7,
+        "acquired": 7,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "one_sample_then_silence",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 0,
+        "now": 7,
+        "acquired": 7,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "one_sample_then_silence",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 0,
+        "now": 7,
+        "acquired": 7,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "same_tick_burst",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 1,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 2,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "same_tick_burst",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 1,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 2,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        3,
+        3,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "same_tick_burst",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 1,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 2,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        3,
+        3,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "qualified_then_stale",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 11,
+        "acquired": 11,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        2,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "qualified_then_stale",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 11,
+        "acquired": 11,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        2,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "qualified_then_stale",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 11,
+        "acquired": 11,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "gap_then_new_bad",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 1,
+        "acquired": 1,
+        "sequence": 1,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 5,
+        "acquired": 5,
+        "sequence": 5,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 7,
+        "acquired": 7,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "gap_then_new_bad",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 1,
+        "acquired": 1,
+        "sequence": 1,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 5,
+        "acquired": 5,
+        "sequence": 5,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 7,
+        "acquired": 7,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "gap_then_new_bad",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 1,
+        "acquired": 1,
+        "sequence": 1,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 5,
+        "acquired": 5,
+        "sequence": 5,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 7,
+        "acquired": 7,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        3,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "neutral_breaks_run",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 15
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 6,
+        "acquired": 6,
+        "sequence": 6,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 8,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "neutral_breaks_run",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 15
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 6,
+        "acquired": 6,
+        "sequence": 6,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 8,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "neutral_breaks_run",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 15
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 6,
+        "acquired": 6,
+        "sequence": 6,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 8,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        5,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "stale_good_does_not_clear",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 10,
+        "acquired": 1,
+        "sequence": 10,
+        "value": 5
+      },
+      {
+        "kind": 0,
+        "now": 11,
+        "acquired": 11,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        2,
+        0,
+        0,
+        0,
+        3,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        2,
+        0,
+        0,
+        0,
+        3,
+        1,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "stale_good_does_not_clear",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 10,
+        "acquired": 1,
+        "sequence": 10,
+        "value": 5
+      },
+      {
+        "kind": 0,
+        "now": 11,
+        "acquired": 11,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        2,
+        0,
+        0,
+        0,
+        3,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        2,
+        0,
+        0,
+        0,
+        3,
+        1,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "stale_good_does_not_clear",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 10,
+        "acquired": 1,
+        "sequence": 10,
+        "value": 5
+      },
+      {
+        "kind": 0,
+        "now": 11,
+        "acquired": 11,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        2,
+        0,
+        0,
+        0,
+        3,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        3,
+        1,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "clear_requires_evidence",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 5,
+        "acquired": 5,
+        "sequence": 5,
+        "value": 5
+      },
+      {
+        "kind": 0,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 1,
+        "now": 9,
+        "acquired": 9,
+        "sequence": 9,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 11,
+        "acquired": 11,
+        "sequence": 11,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 12,
+        "acquired": 12,
+        "sequence": 12,
+        "value": 5
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        0,
+        1,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        0,
+        1,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        0,
+        1,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        6,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        7,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "clear_requires_evidence",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 5,
+        "acquired": 5,
+        "sequence": 5,
+        "value": 5
+      },
+      {
+        "kind": 0,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 1,
+        "now": 9,
+        "acquired": 9,
+        "sequence": 9,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 11,
+        "acquired": 11,
+        "sequence": 11,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 12,
+        "acquired": 12,
+        "sequence": 12,
+        "value": 5
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        0,
+        1,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        6,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        7,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "clear_requires_evidence",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 5,
+        "acquired": 5,
+        "sequence": 5,
+        "value": 5
+      },
+      {
+        "kind": 0,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 1,
+        "now": 9,
+        "acquired": 9,
+        "sequence": 9,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 11,
+        "acquired": 11,
+        "sequence": 11,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 12,
+        "acquired": 12,
+        "sequence": 12,
+        "value": 5
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        6,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        7,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "nominal_cadence_agreement",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 6,
+        "acquired": 6,
+        "sequence": 6,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 8,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 10,
+        "acquired": 10,
+        "sequence": 10,
+        "value": 5
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        0,
+        1,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        6,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "nominal_cadence_agreement",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 6,
+        "acquired": 6,
+        "sequence": 6,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 8,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 10,
+        "acquired": 10,
+        "sequence": 10,
+        "value": 5
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        0,
+        1,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        6,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "nominal_cadence_agreement",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 6,
+        "acquired": 6,
+        "sequence": 6,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 8,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 10,
+        "acquired": 10,
+        "sequence": 10,
+        "value": 5
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        6,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "producer_epoch_retains_alarm",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 3,
+        "now": 5,
+        "acquired": 5,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 1,
+        "now": 6,
+        "acquired": 6,
+        "sequence": 0,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 1,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 9,
+        "acquired": 9,
+        "sequence": 2,
+        "value": 5
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        0,
+        1,
+        4,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        5,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        6,
+        0,
+        1,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "producer_epoch_retains_alarm",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 3,
+        "now": 5,
+        "acquired": 5,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 1,
+        "now": 6,
+        "acquired": 6,
+        "sequence": 0,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 1,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 9,
+        "acquired": 9,
+        "sequence": 2,
+        "value": 5
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        0,
+        1,
+        4,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        5,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        6,
+        0,
+        1,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "producer_epoch_retains_alarm",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 3,
+        "now": 5,
+        "acquired": 5,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 1,
+        "now": 6,
+        "acquired": 6,
+        "sequence": 0,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 1,
+        "value": 5
+      },
+      {
+        "kind": 1,
+        "now": 9,
+        "acquired": 9,
+        "sequence": 2,
+        "value": 5
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        4,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        5,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        6,
+        0,
+        1,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "pre_epoch_queue_item",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 3,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 1,
+        "now": 3,
+        "acquired": 1,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 0,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        2,
+        1,
+        1,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "pre_epoch_queue_item",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 3,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 1,
+        "now": 3,
+        "acquired": 1,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 0,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        2,
+        1,
+        1,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "pre_epoch_queue_item",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 3,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 1,
+        "now": 3,
+        "acquired": 1,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 0,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        2,
+        1,
+        1,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "sequence_wrap",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 4294967294,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 4294967295,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 0,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "sequence_wrap",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 4294967294,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 4294967295,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 0,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "sequence_wrap",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 4294967294,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 4294967295,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 0,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        3,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "clock_wrap",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 4294967293,
+        "acquired": 4294967293,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4294967295,
+        "acquired": 4294967295,
+        "sequence": 1,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 1,
+        "acquired": 1,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        2,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "clock_wrap",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 4294967293,
+        "acquired": 4294967293,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4294967295,
+        "acquired": 4294967295,
+        "sequence": 1,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 1,
+        "acquired": 1,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        2,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "clock_wrap",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 4294967293,
+        "acquired": 4294967293,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4294967295,
+        "acquired": 4294967295,
+        "sequence": 1,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 1,
+        "acquired": 1,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "future_acquisition",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 1,
+        "acquired": 2,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 1,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "future_acquisition",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 1,
+        "acquired": 2,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 1,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "future_acquisition",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 1,
+        "acquired": 2,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 1,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "clock_regression",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 3,
+        "acquired": 3,
+        "sequence": 3,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        -2,
+        0,
+        3,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        2,
+        0,
+        0,
+        1
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "clock_regression",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 3,
+        "acquired": 3,
+        "sequence": 3,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        -2,
+        0,
+        3,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        2,
+        0,
+        0,
+        1
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "clock_regression",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 3,
+        "acquired": 3,
+        "sequence": 3,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        -2,
+        0,
+        3,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        2,
+        0,
+        0,
+        1
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "half_range_ambiguity",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 2147483648,
+        "acquired": 2147483648,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        -2,
+        0,
+        3,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "half_range_ambiguity",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 2147483648,
+        "acquired": 2147483648,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        -2,
+        0,
+        3,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "half_range_ambiguity",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 2147483648,
+        "acquired": 2147483648,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        -2,
+        0,
+        3,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "invalid_quality_preserves_alarm",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 2,
+        "now": 5,
+        "acquired": 5,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 1,
+        "now": 6,
+        "acquired": 6,
+        "sequence": 6,
+        "value": 5
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        3,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        0,
+        1,
+        4,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "invalid_quality_preserves_alarm",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 2,
+        "now": 5,
+        "acquired": 5,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 1,
+        "now": 6,
+        "acquired": 6,
+        "sequence": 6,
+        "value": 5
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        3,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        0,
+        1,
+        4,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "invalid_quality_preserves_alarm",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 25
+      },
+      {
+        "kind": 2,
+        "now": 5,
+        "acquired": 5,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 1,
+        "now": 6,
+        "acquired": 6,
+        "sequence": 6,
+        "value": 5
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "out_of_order_source",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 3,
+        "acquired": 1,
+        "sequence": 1,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 3,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        1,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "out_of_order_source",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 3,
+        "acquired": 1,
+        "sequence": 1,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 3,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        1,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "out_of_order_source",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 3,
+        "acquired": 1,
+        "sequence": 1,
+        "value": 25
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 3,
+        "value": 25
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        2,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        3,
+        1,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "boundary_age",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 6,
+        "acquired": 6,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 0,
+        "now": 7,
+        "acquired": 7,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "boundary_age",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 6,
+        "acquired": 6,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 0,
+        "now": 7,
+        "acquired": 7,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "boundary_age",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      {
+        "kind": 0,
+        "now": 6,
+        "acquired": 6,
+        "sequence": 0,
+        "value": 0
+      },
+      {
+        "kind": 0,
+        "now": 7,
+        "acquired": 7,
+        "sequence": 0,
+        "value": 0
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "threshold_endpoints",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 0
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 20
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 20
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 20
+      },
+      {
+        "kind": 1,
+        "now": 5,
+        "acquired": 5,
+        "sequence": 5,
+        "value": 10
+      },
+      {
+        "kind": 1,
+        "now": 7,
+        "acquired": 7,
+        "sequence": 7,
+        "value": 10
+      },
+      {
+        "kind": 1,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 8,
+        "value": 10
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        0,
+        1,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        6,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "threshold_endpoints",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 1
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 20
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 20
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 20
+      },
+      {
+        "kind": 1,
+        "now": 5,
+        "acquired": 5,
+        "sequence": 5,
+        "value": 10
+      },
+      {
+        "kind": 1,
+        "now": 7,
+        "acquired": 7,
+        "sequence": 7,
+        "value": 10
+      },
+      {
+        "kind": 1,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 8,
+        "value": 10
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        0,
+        1,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        6,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  },
+  {
+    "profile": 1,
+    "name": "threshold_endpoints",
+    "config": {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2,
+      "policy": 2
+    },
+    "events": [
+      {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 20
+      },
+      {
+        "kind": 1,
+        "now": 2,
+        "acquired": 2,
+        "sequence": 2,
+        "value": 20
+      },
+      {
+        "kind": 1,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 4,
+        "value": 20
+      },
+      {
+        "kind": 1,
+        "now": 5,
+        "acquired": 5,
+        "sequence": 5,
+        "value": 10
+      },
+      {
+        "kind": 1,
+        "now": 7,
+        "acquired": 7,
+        "sequence": 7,
+        "value": 10
+      },
+      {
+        "kind": 1,
+        "now": 8,
+        "acquired": 8,
+        "sequence": 8,
+        "value": 10
+      }
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        6,
+        0,
+        0,
+        0
+      ]
+    ],
+    "reference_match": true
+  }
+]

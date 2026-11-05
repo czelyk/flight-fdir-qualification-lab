@@ -1,0 +1,45 @@
+{
+  "pass_all": true,
+  "candidate_zip_sha256": "9002407555c084ae4f30987f84ced4e96a215d3ad6171227c9e1cfae37b06854",
+  "extracted_project": "C:\\Users\\Ahmet\\Desktop\\flight-fdir-qualification-lab\\runs\\source-check-2c96bb\\flight-fdir-qualification-lab",
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\Ahmet\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "tools/verify.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\Ahmet\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "tools/run_tests.py",
+        "--zig",
+        "C:/Users/Ahmet/Desktop/flight-config-transaction-lab/.tools/zig-x86_64-windows-0.14.1/zig.exe"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\Ahmet\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "tools/analyze.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\Ahmet\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "tools/replay.py",
+        "--policy",
+        "hold"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "exact_c_stream_sha256": "9b2fbe8638ab8eda4d65e3e4672156706c1fd6d92c4d9de7141fa1223ee51a05",
+  "named_csv_equal": true,
+  "trace_comparisons": 394866,
+  "event_comparisons": 2003430,
+  "scope": "Fresh extracted source with existing public compiler explicitly selected; no original project C source was used",
+  "final_source_note": "Final ZIP adds this validation metadata; tested implementation bytes are unchanged"
+}

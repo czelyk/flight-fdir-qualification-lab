@@ -1,0 +1,12 @@
+fixture.elf-arm_fixture.su
+C:\Users\Ahmet\Desktop\flight-fdir-qualification-lab\tests\arm_fixture.c:6:5:arm_smoke	176	static
+
+fixture.elf-fq_monitor.su
+C:\Users\Ahmet\Desktop\flight-fdir-qualification-lab\src\fq_monitor.c:9:5:fq_init	16	static
+C:\Users\Ahmet\Desktop\flight-fdir-qualification-lab\src\fq_monitor.c:34:5:fq_step	16	static
+C:\Users\Ahmet\Desktop\flight-fdir-qualification-lab\src\fq_monitor.c:84:6:fq_output	0	static
+
+monitor.su
+C:\Users\Ahmet\Desktop\flight-fdir-qualification-lab\src\fq_monitor.c:9:5:fq_init	16	static
+C:\Users\Ahmet\Desktop\flight-fdir-qualification-lab\src\fq_monitor.c:34:5:fq_step	16	static
+C:\Users\Ahmet\Desktop\flight-fdir-qualification-lab\src\fq_monitor.c:84:6:fq_output	0	static

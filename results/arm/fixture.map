@@ -1,0 +1,760 @@
+Archive member included to satisfy reference by file (symbol)
+
+C:/Users/Ahmet/AppData/Local/Programs/ArmGNUToolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc.a(libc_a-memcmp.o)
+                              C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o (memcmp)
+C:/Users/Ahmet/AppData/Local/Programs/ArmGNUToolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc.a(libc_a-memset.o)
+                              C:\Users\Ahmet\AppData\Local\Temp\ccv0fHOF.o (memset)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 C:\Users\Ahmet\AppData\Local\Temp\ccv0fHOF.o
+ .data          0x00000000        0x0 C:\Users\Ahmet\AppData\Local\Temp\ccv0fHOF.o
+ .bss           0x00000000        0x0 C:\Users\Ahmet\AppData\Local\Temp\ccv0fHOF.o
+ .text          0x00000000        0x0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .data          0x00000000        0x0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .bss           0x00000000        0x0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .text          0x00000000        0x0 C:/Users/Ahmet/AppData/Local/Programs/ArmGNUToolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc.a(libc_a-memcmp.o)
+ .data          0x00000000        0x0 C:/Users/Ahmet/AppData/Local/Programs/ArmGNUToolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc.a(libc_a-memcmp.o)
+ .bss           0x00000000        0x0 C:/Users/Ahmet/AppData/Local/Programs/ArmGNUToolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc.a(libc_a-memcmp.o)
+ .text          0x00000000        0x0 C:/Users/Ahmet/AppData/Local/Programs/ArmGNUToolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc.a(libc_a-memset.o)
+ .data          0x00000000        0x0 C:/Users/Ahmet/AppData/Local/Programs/ArmGNUToolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc.a(libc_a-memset.o)
+ .bss           0x00000000        0x0 C:/Users/Ahmet/AppData/Local/Programs/ArmGNUToolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc.a(libc_a-memset.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+CODE             0x00010000         0x00040000         xr
+RAM              0x20000000         0x00020000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD C:\Users\Ahmet\AppData\Local\Temp\ccv0fHOF.o
+LOAD C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+LOAD C:/Users/Ahmet/AppData/Local/Programs/ArmGNUToolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc.a
+LOAD C:/Users/Ahmet/AppData/Local/Programs/ArmGNUToolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v7e-m/nofp\libgcc.a
+
+.text           0x00010000    0x1a0cc
+ *(.text*)
+ .text.fq_init  0x00010000       0x60 C:\Users\Ahmet\AppData\Local\Temp\ccv0fHOF.o
+                0x00010000                fq_init
+ .text.fq_step  0x00010060      0x2b4 C:\Users\Ahmet\AppData\Local\Temp\ccv0fHOF.o
+                0x00010060                fq_step
+ .text.fq_output
+                0x00010314       0x38 C:\Users\Ahmet\AppData\Local\Temp\ccv0fHOF.o
+                0x00010314                fq_output
+ .text.arm_smoke
+                0x0001034c       0xb4 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+                0x0001034c                arm_smoke
+ .text.memcmp   0x00010400       0x84 C:/Users/Ahmet/AppData/Local/Programs/ArmGNUToolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc.a(libc_a-memcmp.o)
+                0x00010400                memcmp
+ .text.memset   0x00010484       0x88 C:/Users/Ahmet/AppData/Local/Programs/ArmGNUToolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc.a(libc_a-memset.o)
+                0x00010484                memset
+ *(.rodata*)
+ .rodata.arm_cases
+                0x0001050c     0x1bd8 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_161
+                0x000120e4      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_161
+                0x000124a4      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_160
+                0x00012684      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_160
+                0x00012a44      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_159
+                0x00012c24      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_159
+                0x00012fe4      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_158
+                0x000131c4      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_158
+                0x00013584      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_157
+                0x00013764      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_157
+                0x00013b24      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_156
+                0x00013d04      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_156
+                0x000140c4      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_155
+                0x000142a4      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_155
+                0x00014664      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_154
+                0x00014844      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_154
+                0x00014c04      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_153
+                0x00014de4      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_153
+                0x000151a4      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_152
+                0x00015384      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_152
+                0x00015744      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_151
+                0x00015924      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_151
+                0x00015ce4      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_150
+                0x00015ec4      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_150
+                0x00016284      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_149
+                0x00016464      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_149
+                0x00016824      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_148
+                0x00016a04      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_148
+                0x00016dc4      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_147
+                0x00016fa4      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_147
+                0x00017364      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_146
+                0x00017544      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_146
+                0x00017904      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_145
+                0x00017ae4      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_145
+                0x00017ea4      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_144
+                0x00018084      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_144
+                0x00018444      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_143
+                0x00018624      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_143
+                0x000189e4      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_142
+                0x00018bc4      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_142
+                0x00018f84      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_141
+                0x00019164      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_141
+                0x00019524      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_140
+                0x00019704      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_140
+                0x00019ac4      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_139
+                0x00019ca4      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_139
+                0x0001a064      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_138
+                0x0001a244      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_138
+                0x0001a604      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_137
+                0x0001a7e4       0xf0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_137
+                0x0001a8d4       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_136
+                0x0001a94c       0xf0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_136
+                0x0001aa3c       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_135
+                0x0001aab4       0xf0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_135
+                0x0001aba4       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_134
+                0x0001ac1c       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_134
+                0x0001ac94       0x3c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_133
+                0x0001acd0       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_133
+                0x0001ad48       0x3c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_132
+                0x0001ad84       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_132
+                0x0001adfc       0x3c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_131
+                0x0001ae38       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_131
+                0x0001aed8       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_130
+                0x0001af28       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_130
+                0x0001afc8       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_129
+                0x0001b018       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_129
+                0x0001b0b8       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_128
+                0x0001b108       0xc8 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_128
+                0x0001b1d0       0x64 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_127
+                0x0001b234       0xc8 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_127
+                0x0001b2fc       0x64 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_126
+                0x0001b360       0xc8 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_126
+                0x0001b428       0x64 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_125
+                0x0001b48c       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_125
+                0x0001b4dc       0x28 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_124
+                0x0001b504       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_124
+                0x0001b554       0x28 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_123
+                0x0001b57c       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_123
+                0x0001b5cc       0x28 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_122
+                0x0001b5f4       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_122
+                0x0001b66c       0x3c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_121
+                0x0001b6a8       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_121
+                0x0001b720       0x3c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_120
+                0x0001b75c       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_120
+                0x0001b7d4       0x3c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_119
+                0x0001b810       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_119
+                0x0001b860       0x28 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_118
+                0x0001b888       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_118
+                0x0001b8d8       0x28 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_117
+                0x0001b900       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_117
+                0x0001b950       0x28 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_116
+                0x0001b978       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_116
+                0x0001ba18       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_115
+                0x0001ba68       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_115
+                0x0001bb08       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_114
+                0x0001bb58       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_114
+                0x0001bbf8       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_113
+                0x0001bc48       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_113
+                0x0001bcc0       0x3c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_112
+                0x0001bcfc       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_112
+                0x0001bd74       0x3c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_111
+                0x0001bdb0       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_111
+                0x0001be28       0x3c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_110
+                0x0001be64       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_110
+                0x0001bf04       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_109
+                0x0001bf54       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_109
+                0x0001bff4       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_108
+                0x0001c044       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_108
+                0x0001c0e4       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_107
+                0x0001c134      0x118 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_107
+                0x0001c24c       0x8c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_106
+                0x0001c2d8      0x118 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_106
+                0x0001c3f0       0x8c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_105
+                0x0001c47c      0x118 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_105
+                0x0001c594       0x8c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_104
+                0x0001c620       0xf0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_104
+                0x0001c710       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_103
+                0x0001c788       0xf0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_103
+                0x0001c878       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_102
+                0x0001c8f0       0xf0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_102
+                0x0001c9e0       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_101
+                0x0001ca58      0x140 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_101
+                0x0001cb98       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_100
+                0x0001cc38      0x140 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_100
+                0x0001cd78       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_99
+                0x0001ce18      0x140 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_99
+                0x0001cf58       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_98
+                0x0001cff8       0xc8 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_98
+                0x0001d0c0       0x64 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_97
+                0x0001d124       0xc8 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_97
+                0x0001d1ec       0x64 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_96
+                0x0001d250       0xc8 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_96
+                0x0001d318       0x64 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_95
+                0x0001d37c       0xc8 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_95
+                0x0001d444       0x64 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_94
+                0x0001d4a8       0xc8 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_94
+                0x0001d570       0x64 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_93
+                0x0001d5d4       0xc8 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_93
+                0x0001d69c       0x64 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_92
+                0x0001d700       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_92
+                0x0001d7a0       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_91
+                0x0001d7f0       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_91
+                0x0001d890       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_90
+                0x0001d8e0       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_90
+                0x0001d980       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_89
+                0x0001d9d0       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_89
+                0x0001da70       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_88
+                0x0001dac0       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_88
+                0x0001db60       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_87
+                0x0001dbb0       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_87
+                0x0001dc50       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_86
+                0x0001dca0       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_86
+                0x0001dd18       0x3c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_85
+                0x0001dd54       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_85
+                0x0001ddcc       0x3c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_84
+                0x0001de08       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_84
+                0x0001de80       0x3c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_83
+                0x0001debc       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_83
+                0x0001df34       0x3c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_82
+                0x0001df70       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_82
+                0x0001dfe8       0x3c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_81
+                0x0001e024       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_81
+                0x0001e09c       0x3c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_80
+                0x0001e0d8      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_80
+                0x0001e498      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_79
+                0x0001e678      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_79
+                0x0001ea38      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_78
+                0x0001ec18      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_78
+                0x0001efd8      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_77
+                0x0001f1b8      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_77
+                0x0001f578      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_76
+                0x0001f758      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_76
+                0x0001fb18      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_75
+                0x0001fcf8      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_75
+                0x000200b8      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_74
+                0x00020298      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_74
+                0x00020658      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_73
+                0x00020838      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_73
+                0x00020bf8      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_72
+                0x00020dd8      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_72
+                0x00021198      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_71
+                0x00021378      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_71
+                0x00021738      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_70
+                0x00021918      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_70
+                0x00021cd8      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_69
+                0x00021eb8      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_69
+                0x00022278      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_68
+                0x00022458      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_68
+                0x00022818      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_67
+                0x000229f8      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_67
+                0x00022db8      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_66
+                0x00022f98      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_66
+                0x00023358      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_65
+                0x00023538      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_65
+                0x000238f8      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_64
+                0x00023ad8      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_64
+                0x00023e98      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_63
+                0x00024078      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_63
+                0x00024438      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_62
+                0x00024618      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_62
+                0x000249d8      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_61
+                0x00024bb8      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_61
+                0x00024f78      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_60
+                0x00025158      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_60
+                0x00025518      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_59
+                0x000256f8      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_59
+                0x00025ab8      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_58
+                0x00025c98      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_58
+                0x00026058      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_57
+                0x00026238      0x3c0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_57
+                0x000265f8      0x1e0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_56
+                0x000267d8       0xf0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_56
+                0x000268c8       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_55
+                0x00026940       0xf0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_55
+                0x00026a30       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_54
+                0x00026aa8       0xf0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_54
+                0x00026b98       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_53
+                0x00026c10       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_53
+                0x00026c88       0x3c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_52
+                0x00026cc4       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_52
+                0x00026d3c       0x3c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_51
+                0x00026d78       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_51
+                0x00026df0       0x3c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_50
+                0x00026e2c       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_50
+                0x00026ecc       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_49
+                0x00026f1c       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_49
+                0x00026fbc       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_48
+                0x0002700c       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_48
+                0x000270ac       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_47
+                0x000270fc       0xc8 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_47
+                0x000271c4       0x64 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_46
+                0x00027228       0xc8 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_46
+                0x000272f0       0x64 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_45
+                0x00027354       0xc8 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_45
+                0x0002741c       0x64 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_44
+                0x00027480       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_44
+                0x000274d0       0x28 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_43
+                0x000274f8       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_43
+                0x00027548       0x28 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_42
+                0x00027570       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_42
+                0x000275c0       0x28 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_41
+                0x000275e8       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_41
+                0x00027660       0x3c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_40
+                0x0002769c       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_40
+                0x00027714       0x3c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_39
+                0x00027750       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_39
+                0x000277c8       0x3c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_38
+                0x00027804       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_38
+                0x00027854       0x28 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_37
+                0x0002787c       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_37
+                0x000278cc       0x28 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_36
+                0x000278f4       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_36
+                0x00027944       0x28 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_35
+                0x0002796c       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_35
+                0x00027a0c       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_34
+                0x00027a5c       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_34
+                0x00027afc       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_33
+                0x00027b4c       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_33
+                0x00027bec       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_32
+                0x00027c3c       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_32
+                0x00027cb4       0x3c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_31
+                0x00027cf0       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_31
+                0x00027d68       0x3c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_30
+                0x00027da4       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_30
+                0x00027e1c       0x3c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_29
+                0x00027e58       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_29
+                0x00027ef8       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_28
+                0x00027f48       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_28
+                0x00027fe8       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_27
+                0x00028038       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_27
+                0x000280d8       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_26
+                0x00028128      0x118 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_26
+                0x00028240       0x8c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_25
+                0x000282cc      0x118 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_25
+                0x000283e4       0x8c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_24
+                0x00028470      0x118 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_24
+                0x00028588       0x8c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_23
+                0x00028614       0xf0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_23
+                0x00028704       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_22
+                0x0002877c       0xf0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_22
+                0x0002886c       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_21
+                0x000288e4       0xf0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_21
+                0x000289d4       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_20
+                0x00028a4c      0x140 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_20
+                0x00028b8c       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_19
+                0x00028c2c      0x140 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_19
+                0x00028d6c       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_18
+                0x00028e0c      0x140 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_18
+                0x00028f4c       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_17
+                0x00028fec       0xc8 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_17
+                0x000290b4       0x64 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_16
+                0x00029118       0xc8 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_16
+                0x000291e0       0x64 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_15
+                0x00029244       0xc8 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_15
+                0x0002930c       0x64 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_14
+                0x00029370       0xc8 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_14
+                0x00029438       0x64 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_13
+                0x0002949c       0xc8 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_13
+                0x00029564       0x64 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_12
+                0x000295c8       0xc8 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_12
+                0x00029690       0x64 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_11
+                0x000296f4       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_11
+                0x00029794       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_10
+                0x000297e4       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_10
+                0x00029884       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_9
+                0x000298d4       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_9
+                0x00029974       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_8
+                0x000299c4       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_8
+                0x00029a64       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_7
+                0x00029ab4       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_7
+                0x00029b54       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_6
+                0x00029ba4       0xa0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_6
+                0x00029c44       0x50 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_5
+                0x00029c94       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_5
+                0x00029d0c       0x3c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_4
+                0x00029d48       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_4
+                0x00029dc0       0x3c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_3
+                0x00029dfc       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_3
+                0x00029e74       0x3c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_2
+                0x00029eb0       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_2
+                0x00029f28       0x3c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_1
+                0x00029f64       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_1
+                0x00029fdc       0x3c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.expected_0
+                0x0002a018       0x78 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .rodata.events_0
+                0x0002a090       0x3c C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+
+.glue_7         0x0002a0cc        0x0
+ .glue_7        0x0002a0cc        0x0 linker stubs
+
+.glue_7t        0x0002a0cc        0x0
+ .glue_7t       0x0002a0cc        0x0 linker stubs
+
+.vfp11_veneer   0x0002a0cc        0x0
+ .vfp11_veneer  0x0002a0cc        0x0 linker stubs
+
+.v4_bx          0x0002a0cc        0x0
+ .v4_bx         0x0002a0cc        0x0 linker stubs
+
+.iplt           0x0002a0cc        0x0
+ .iplt          0x0002a0cc        0x0 C:\Users\Ahmet\AppData\Local\Temp\ccv0fHOF.o
+
+.rel.dyn        0x0002a0cc        0x0
+ .rel.iplt      0x0002a0cc        0x0 C:\Users\Ahmet\AppData\Local\Temp\ccv0fHOF.o
+
+.ARM.exidx
+ *(.ARM.exidx*)
+
+.data
+ *(.data*)
+
+.igot.plt       0x20000000        0x0 load address 0x0002a0cc
+ .igot.plt      0x20000000        0x0 C:\Users\Ahmet\AppData\Local\Temp\ccv0fHOF.o
+
+.bss            0x20000000       0x20 load address 0x0002a0cc
+ *(.bss*)
+ .bss.arm_results
+                0x20000000       0x20 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+                0x20000000                arm_results
+ *(COMMON)
+OUTPUT(C:\Users\Ahmet\Desktop\flight-fdir-qualification-lab\runs\20261104T120515Z_arm_17b540\fixture.elf elf32-littlearm)
+LOAD linker stubs
+
+.comment        0x00000000       0x45
+ .comment       0x00000000       0x45 C:\Users\Ahmet\AppData\Local\Temp\ccv0fHOF.o
+                                 0x46 (size before relaxing)
+ .comment       0x00000045        0x0 C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+                                 0x46 (size before relaxing)
+
+.ARM.attributes
+                0x00000000       0x2e
+ .ARM.attributes
+                0x00000000       0x2e C:\Users\Ahmet\AppData\Local\Temp\ccv0fHOF.o
+ .ARM.attributes
+                0x0000002e       0x2e C:\Users\Ahmet\AppData\Local\Temp\ccvZxp7D.o
+ .ARM.attributes
+                0x0000005c       0x2e C:/Users/Ahmet/AppData/Local/Programs/ArmGNUToolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc.a(libc_a-memcmp.o)
+ .ARM.attributes
+                0x0000008a       0x2e C:/Users/Ahmet/AppData/Local/Programs/ArmGNUToolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc.a(libc_a-memset.o)
+
+.debug_frame    0x00000000       0x58
+ .debug_frame   0x00000000       0x2c C:/Users/Ahmet/AppData/Local/Programs/ArmGNUToolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc.a(libc_a-memcmp.o)
+ .debug_frame   0x0000002c       0x2c C:/Users/Ahmet/AppData/Local/Programs/ArmGNUToolchain/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc.a(libc_a-memset.o)

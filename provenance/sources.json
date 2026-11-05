@@ -1,0 +1,42 @@
+{
+  "checked_date": "2026-11-04",
+  "sources": [
+    {
+      "name": "cfs-lc-action",
+      "url": "https://raw.githubusercontent.com/nasa/LC/c9104f85b3a9b795be5c67702c8e190b36e4cdd5/fsw/src/lc_action.c",
+      "resolved_url": "https://raw.githubusercontent.com/nasa/LC/c9104f85b3a9b795be5c67702c8e190b36e4cdd5/fsw/src/lc_action.c",
+      "bytes": 25451,
+      "sha256": "d1f94ee481ea3de89fcf5e5169e5fcb55c7ead08864b9a15bd06c7e2696136dd",
+      "scope": "Reviewed as related work/context; not runtime code"
+    },
+    {
+      "name": "cfs-lc-watch",
+      "url": "https://raw.githubusercontent.com/nasa/LC/c9104f85b3a9b795be5c67702c8e190b36e4cdd5/fsw/src/lc_watch.c",
+      "resolved_url": "https://raw.githubusercontent.com/nasa/LC/c9104f85b3a9b795be5c67702c8e190b36e4cdd5/fsw/src/lc_watch.c",
+      "bytes": 42803,
+      "sha256": "156736798410228269174b44af6b03da144f15280e1ba8d7357e0446ad43db74",
+      "scope": "Reviewed as related work/context; not runtime code"
+    },
+    {
+      "name": "nasa-fault-guidance",
+      "url": "https://swehb.nasa.gov/pages/viewpage.action?pageId=107053215&showCommentArea=true",
+      "resolved_url": "https://swehb.nasa.gov/pages/viewpage.action?pageId=107053215&showCommentArea=true",
+      "bytes": 128913,
+      "sha256": "5be38949208b247d0b3cc2933a0153f6850f0c1b741fea50b3fbca22867f2699",
+      "scope": "Reviewed as related work/context; not runtime code"
+    },
+    {
+      "name": "ntrs-methodology",
+      "url": "https://ntrs.nasa.gov/citations/20100021298",
+      "resolved_url": "https://ntrs.nasa.gov/citations/20100021298",
+      "bytes": 99424,
+      "sha256": "7c5e6f8ca30c803b320a5822e90a347832b53c6bbd43706ee51f6c01d428e8dd",
+      "scope": "Reviewed as related work/context; not runtime code"
+    },
+    {
+      "name": "JPL design principles legacy link",
+      "url": "https://acquisition.jpl.nasa.gov/download/terms-conditions/supporting-documents/jpl-design-principles.pdf",
+      "scope": "Browser redirected to acquisition landing page; PDF was not obtained. Not treated as read requirement text."
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "completed_utc": "2026-11-04T12:10:27.406967+00:00",
+  "pass_all": true,
+  "compiler": "clang version 19.1.7 (https://github.com/ziglang/zig-bootstrap de1b01a8c1dddf75a560123ac1c2ab182b4830da)",
+  "monitor_bytes": 104,
+  "named_cases": 19,
+  "named_trace_comparisons": 114,
+  "named_event_comparisons": 486,
+  "enumeration_depth": 5,
+  "alphabet": [
+    "good",
+    "bad",
+    "neutral",
+    "tick",
+    "gap",
+    "duplicate",
+    "invalid",
+    "epoch"
+  ],
+  "profiles": [
+    {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 4,
+      "clear_ticks": 3,
+      "max_age": 6,
+      "max_gap": 2,
+      "samples": 3
+    },
+    {
+      "trip_limit": 20,
+      "clear_limit": 10,
+      "trip_ticks": 2,
+      "clear_ticks": 2,
+      "max_age": 3,
+      "max_gap": 1,
+      "samples": 2
+    }
+  ],
+  "policies": [
+    "count",
+    "hold",
+    "observed"
+  ],
+  "exhaustive_trace_comparisons": 393216,
+  "exhaustive_event_comparisons": 1966080,
+  "seeded_trace_comparisons": 1536,
+  "seeded_event_comparisons": 36864,
+  "seed": 20261104,
+  "total_trace_comparisons": 394866,
+  "total_event_comparisons": 2003430,
+  "c_stream_sha256": "9b2fbe8638ab8eda4d65e3e4672156706c1fd6d92c4d9de7141fa1223ee51a05",
+  "reference_stream_sha256": "9b2fbe8638ab8eda4d65e3e4672156706c1fd6d92c4d9de7141fa1223ee51a05",
+  "clock_translation": [
+    {
+      "profile": 0,
+      "output_sha256": "e5bac34db07ea0e15e93a546cd5e5456f0a904372ae9c7803ffbbd8426e088b4",
+      "wrap_translation_invariant": true
+    },
+    {
+      "profile": 1,
+      "output_sha256": "cf080c86769f64297fa41a5dc9073cfcbe983ff1165b12ec39ec998654dc039f",
+      "wrap_translation_invariant": true
+    }
+  ],
+  "source_sha256": {
+    "include/fq_monitor.h": "77cb586af796202a23f1935a570915a6c2ded759e4b5d551f014c839fe19b147",
+    "src/fq_monitor.c": "8584f6b3865fa890a1a02a0e76cd90d59b7ff17ff97ab4c7aeb96bf7cad1c3af",
+    "tests/arm_fixture.c": "064b296578d67ce860b03e809f105c3fc7b645bce07a0165776c15f3328611d1",
+    "tests/bridge.c": "749ad5fe9b02bbc4d21e197c6438308bdee8daa512f9c5548b7fa5b6b11ebb3c",
+    "tests/unit.c": "ff933aa06ccaba93d5e4ff1e39221eb24f8523b7a10c0688e1ff04771b9e40c1",
+    "tools/analyze.py": "96d7e2101e3babfe0fc00f36da93fa5e485484caa132c41c492a2169ac71db39",
+    "tools/bootstrap_zig.py": "4b074026bca3f2d8e5868aae9379bbeee3dd6fb6da23b518c8604cb8279c6b4b",
+    "tools/build.py": "5bf6bc3d2e9c5706452a99207598b56aa84a8f0b558f677750d49ba0203c6315",
+    "tools/cases.py": "b0244b0c6935ea80a503a10cdaa4650060b055138756f300c5a4e68a9cd8ace3",
+    "tools/native.py": "2a5edb3553be108e2227c7560c2234c2916d50ac513791445e9d0a5cb1c50dda",
+    "tools/reference.py": "1a0698a9885645b698f2d8dad821b7b347737ece05378a5ee35273db9f821b52",
+    "tools/replay.py": "a5ca43a6fea09b0c5ea2fbcf065fe09a701fc400d567517317b5202d52e96b5e",
+    "tools/run_arm.py": "6fa7a72b9528a475fcfb758caf07f67414ed4949b63d41b97ed64f2a2acea9f8",
+    "tools/run_tests.py": "aa13dda15fd8a59d894d4aee4a38bea24c034863d71a0428c8d8fa0b8c4dd20c"
+  },
+  "physical_tests": false,
+  "target_timing": false,
+  "independent_peer_review": false,
+  "scope": "Bounded synthetic token enumeration and seeded histories, not all inputs or flight reliability"
+}

@@ -1,0 +1,7 @@
+{
+  "pass_all": true,
+  "traces": 162,
+  "events": 1638,
+  "output_sha256": "6ce52cd9dbea43683f5f68dbaa4a69d8f9b4e9d42fdcd7e1c64fec679d841f61",
+  "scope": "Debug CMake shared library vs reference, named cases plus eight seeded histories"
+}

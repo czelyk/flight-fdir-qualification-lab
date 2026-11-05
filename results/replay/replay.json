@@ -1,0 +1,80 @@
+{
+  "pass_all": true,
+  "scenario": "one_sample_then_silence",
+  "config": {
+    "trip_limit": 20,
+    "clear_limit": 10,
+    "trip_ticks": 4,
+    "clear_ticks": 3,
+    "max_age": 6,
+    "max_gap": 2,
+    "samples": 3,
+    "policy": 2
+  },
+  "rows": [
+    {
+      "event": {
+        "kind": 1,
+        "now": 0,
+        "acquired": 0,
+        "sequence": 0,
+        "value": 25
+      },
+      "output": {
+        "rc": 0,
+        "alarm": 0,
+        "quality": 1,
+        "pending": 1,
+        "span": 0,
+        "count": 1,
+        "accepted": 1,
+        "rejected": 0,
+        "epochs": 0,
+        "bad_clock": 0
+      }
+    },
+    {
+      "event": {
+        "kind": 0,
+        "now": 4,
+        "acquired": 4,
+        "sequence": 0,
+        "value": 0
+      },
+      "output": {
+        "rc": 0,
+        "alarm": 0,
+        "quality": 1,
+        "pending": 1,
+        "span": 0,
+        "count": 1,
+        "accepted": 1,
+        "rejected": 0,
+        "epochs": 0,
+        "bad_clock": 0
+      }
+    },
+    {
+      "event": {
+        "kind": 0,
+        "now": 7,
+        "acquired": 7,
+        "sequence": 0,
+        "value": 0
+      },
+      "output": {
+        "rc": 0,
+        "alarm": 0,
+        "quality": 2,
+        "pending": 0,
+        "span": 0,
+        "count": 0,
+        "accepted": 1,
+        "rejected": 0,
+        "epochs": 0,
+        "bad_clock": 0
+      }
+    }
+  ],
+  "physical_test": false
+}

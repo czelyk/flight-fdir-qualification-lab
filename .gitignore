@@ -1,0 +1,14 @@
+build*/
+.tools/
+.venv/
+runs/
+__pycache__/
+*.pyc
+*.exe
+*.dll
+*.so
+*.dylib
+*.o
+*.elf
+*.su
+*.zip

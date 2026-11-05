@@ -1,0 +1,30 @@
+{
+  "pass_all": true,
+  "commands": [
+    [
+      "cmake",
+      "-S",
+      "C:\\Users\\Ahmet\\Desktop\\flight-fdir-qualification-lab",
+      "-B",
+      "C:\\Users\\Ahmet\\Desktop\\flight-fdir-qualification-lab\\build-cmake",
+      "-G",
+      "Ninja",
+      "-DCMAKE_MAKE_PROGRAM=C:\\Users\\Ahmet\\Desktop\\flight-config-transaction-lab\\.venv\\Scripts\\ninja.exe",
+      "-DCMAKE_TOOLCHAIN_FILE=C:\\Users\\Ahmet\\Desktop\\flight-fdir-qualification-lab\\cmake\\zig-windows.cmake",
+      "-DZIG_EXECUTABLE=C:\\Users\\Ahmet\\Desktop\\flight-config-transaction-lab\\.tools\\zig-x86_64-windows-0.14.1\\zig.exe",
+      "-DCMAKE_BUILD_TYPE=Debug"
+    ],
+    [
+      "cmake",
+      "--build",
+      "C:\\Users\\Ahmet\\Desktop\\flight-fdir-qualification-lab\\build-cmake"
+    ],
+    [
+      "ctest",
+      "--test-dir",
+      "C:\\Users\\Ahmet\\Desktop\\flight-fdir-qualification-lab\\build-cmake",
+      "--output-on-failure"
+    ]
+  ],
+  "scope": "Local Windows Debug CMake/CTest only"
+}
