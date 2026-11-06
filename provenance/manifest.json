@@ -8,8 +8,8 @@
     },
     {
       "path": ".github/workflows/test.yml",
-      "bytes": 1255,
-      "sha256": "bbe5b3b6d4e336d85482ad66c581b90932f560c7f1a704772f584a5bf144cdfa"
+      "bytes": 1365,
+      "sha256": "ff728fb29ee58afb96cc6f2952d665dc09189cc3e8dea08ab18a9ec4e64efd04"
     },
     {
       "path": ".gitignore",
@@ -18,13 +18,13 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 1320,
-      "sha256": "f77f66415b6165f8ff8afc64902e65db2f8e7f87c070cacc0b3473f5cf6b3a34"
+      "bytes": 1655,
+      "sha256": "9cfbba496084a81ec9e34bfebf4714cb1328b5e42284e646f3748c9b7cf906c1"
     },
     {
       "path": "CMakeLists.txt",
       "bytes": 1665,
-      "sha256": "fe981281f8682a2e387fe1ac917a0022ede59eb010951288bf2bf42c7468c402"
+      "sha256": "8e45ca66807fb0784bd383053d3078f97ae9da00d2f6b29bb8b6591142c74c5f"
     },
     {
       "path": "GITHUB.md",
@@ -38,8 +38,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9063,
-      "sha256": "38b8b813cf024d3f7ddd0eb6fc43a43a422362e79154774104a8f03de5834493"
+      "bytes": 9656,
+      "sha256": "a1511d13b62b2109251c8b4af51d803a1e9c15418e688ae11b300de543635a4b"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -48,8 +48,8 @@
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 3528,
-      "sha256": "f954f343e8a55a7efafe34046b7c2c1baf643b4662475e7f13118e214774b9b4"
+      "bytes": 3834,
+      "sha256": "a69a4f176afc0dee72076233e6e5dbd9d9ef08bcde4aa5185fee1d2d72069a0e"
     },
     {
       "path": "cmake/arm-emulation.ld",
@@ -82,6 +82,11 @@
       "sha256": "295f8c0e0dae40ee1723c3d94053abef48232bb09d51b45149513a5acf111525"
     },
     {
+      "path": "docs/RESTART_POLICY.md",
+      "bytes": 5785,
+      "sha256": "f053a6b0ddde2ace7af5e595609b83526fbf35865e612441d6677436be9140f6"
+    },
+    {
       "path": "docs/REVIEW.md",
       "bytes": 2243,
       "sha256": "27c581c305f4edfccec6e0ab92884bae9028e5cd18f82ee6c10181c600be16eb"
@@ -100,6 +105,11 @@
       "path": "examples/worker.c",
       "bytes": 1851,
       "sha256": "b728ad276a02e2265202def4ffc329a70e97852302ee137f615890e89e4eab18"
+    },
+    {
+      "path": "experiments/restart_bridge.c",
+      "bytes": 1057,
+      "sha256": "6ca85363dd8b1814c84f5777f1d6b3f54148cb965e4ac55f604c676983f2a0ff"
     },
     {
       "path": "include/fq_acquisition.h",
@@ -267,6 +277,16 @@
       "sha256": "62877a257fd56c13addab14bba80ed378416bb0c7382bf9c00d1a5ee087f1a97"
     },
     {
+      "path": "results/restart-policy/cases.csv",
+      "bytes": 41688,
+      "sha256": "aa3147a44eac840b3a3dd0dc8cdadaaa404903d00781713fa0d240eda42afbd7"
+    },
+    {
+      "path": "results/restart-policy/summary.json",
+      "bytes": 7564,
+      "sha256": "5aceab00e49436891a1edd51326d2eb1d964e3bbceed43fb21bdd39f2def6864"
+    },
+    {
       "path": "results/tickless/tickless.json",
       "bytes": 3006,
       "sha256": "be9464366afdcb951065df0547caf401096493105dd80aad356bdf316a845de0"
@@ -372,6 +392,11 @@
       "sha256": "6fa7a72b9528a475fcfb758caf07f67414ed4949b63d41b97ed64f2a2acea9f8"
     },
     {
+      "path": "tools/run_restart_policy.py",
+      "bytes": 10314,
+      "sha256": "4f108a8129e5be125e46b9adddb6d103bbf9c5c8239eebbcaeea23ade5ba273f"
+    },
+    {
       "path": "tools/run_tests.py",
       "bytes": 6365,
       "sha256": "aa13dda15fd8a59d894d4aee4a38bea24c034863d71a0428c8d8fa0b8c4dd20c"
@@ -383,8 +408,8 @@
     },
     {
       "path": "tools/verify.py",
-      "bytes": 3027,
-      "sha256": "8d8e60c3d8a371a4e9e924e64f371c00e6f6c331682a4a2c8a25f4b0c7a28049"
+      "bytes": 3531,
+      "sha256": "85fc27a4638aeae4ac6643af830c5f9165f03a0d77dc539d4dd92f4e6fedb15e"
     }
   ]
 }

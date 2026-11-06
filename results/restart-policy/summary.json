@@ -1,0 +1,255 @@
+{
+  "compiler": "clang version 19.1.7 (https://github.com/ziglang/zig-bootstrap de1b01a8c1dddf75a560123ac1c2ab182b4830da)",
+  "build_arguments": [
+    "-std=c99",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-Iinclude",
+    "-shared",
+    "src/fq_monitor.c",
+    "src/fq_tickless.c",
+    "src/fq_acquisition.c",
+    "experiments/restart_bridge.c"
+  ],
+  "source_sha256": {
+    "src/fq_monitor.c": "8584f6b3865fa890a1a02a0e76cd90d59b7ff17ff97ab4c7aeb96bf7cad1c3af",
+    "src/fq_tickless.c": "56db1224dca2b54931b980697c021121f00389285afae52dad5056766574b282",
+    "src/fq_acquisition.c": "af8fe252923446b65dd06d8bf1f1e0a10642d5ab23fb78f6580de8161f2613af",
+    "experiments/restart_bridge.c": "6ca85363dd8b1814c84f5777f1d6b3f54148cb965e4ac55f604c676983f2a0ff",
+    "include/fq_monitor.h": "77cb586af796202a23f1935a570915a6c2ded759e4b5d551f014c839fe19b147",
+    "include/fq_tickless.h": "35a87f467378dbc6bc746e9da600cc26f66d7c17294206067b9ee45d68cee7aa",
+    "include/fq_acquisition.h": "af8f63b3ddec309b10c15555412b2c5bbcde0c413fd69d323ea314008d9b05a5",
+    "tools/build.py": "5bf6bc3d2e9c5706452a99207598b56aa84a8f0b558f677750d49ba0203c6315",
+    "tools/cases.py": "b0244b0c6935ea80a503a10cdaa4650060b055138756f300c5a4e68a9cd8ace3",
+    "tools/native.py": "2a5edb3553be108e2227c7560c2234c2916d50ac513791445e9d0a5cb1c50dda",
+    "tools/run_restart_policy.py": "4f108a8129e5be125e46b9adddb6d103bbf9c5c8239eebbcaeea23ade5ba273f"
+  },
+  "cases_csv_sha256": "aa3147a44eac840b3a3dd0dc8cdadaaa404903d00781713fa0d240eda42afbd7",
+  "synthetic_inputs": true,
+  "physical_tests": false,
+  "measurement": {
+    "cases": 864,
+    "logical_horizon_ticks": 64,
+    "wrap_replays": 864,
+    "queued_packets_rejected_per_origin": 864,
+    "budget_matched_cap_agreement_cases": 864,
+    "by_budget": {
+      "4": {
+        "continuous": {
+          "notices_by_first_admission": 203,
+          "recoverable_cases": 204,
+          "notices_during_persistent_loss": 12,
+          "persistent_cases": 12,
+          "first_notice_range_ticks": [
+            5,
+            5
+          ]
+        },
+        "per_attempt": {
+          "notices_by_first_admission": 191,
+          "recoverable_cases": 204,
+          "notices_during_persistent_loss": 8,
+          "persistent_cases": 12,
+          "first_notice_range_ticks": [
+            5,
+            5
+          ]
+        },
+        "capped_per_attempt": {
+          "notices_by_first_admission": 199,
+          "recoverable_cases": 204,
+          "notices_during_persistent_loss": 12,
+          "persistent_cases": 12,
+          "first_notice_range_ticks": [
+            5,
+            9
+          ]
+        }
+      },
+      "6": {
+        "continuous": {
+          "notices_by_first_admission": 200,
+          "recoverable_cases": 204,
+          "notices_during_persistent_loss": 12,
+          "persistent_cases": 12,
+          "first_notice_range_ticks": [
+            7,
+            7
+          ]
+        },
+        "per_attempt": {
+          "notices_by_first_admission": 147,
+          "recoverable_cases": 204,
+          "notices_during_persistent_loss": 6,
+          "persistent_cases": 12,
+          "first_notice_range_ticks": [
+            7,
+            7
+          ]
+        },
+        "capped_per_attempt": {
+          "notices_by_first_admission": 174,
+          "recoverable_cases": 204,
+          "notices_during_persistent_loss": 12,
+          "persistent_cases": 12,
+          "first_notice_range_ticks": [
+            7,
+            13
+          ]
+        }
+      },
+      "8": {
+        "continuous": {
+          "notices_by_first_admission": 192,
+          "recoverable_cases": 204,
+          "notices_during_persistent_loss": 12,
+          "persistent_cases": 12,
+          "first_notice_range_ticks": [
+            9,
+            9
+          ]
+        },
+        "per_attempt": {
+          "notices_by_first_admission": 79,
+          "recoverable_cases": 204,
+          "notices_during_persistent_loss": 4,
+          "persistent_cases": 12,
+          "first_notice_range_ticks": [
+            9,
+            9
+          ]
+        },
+        "capped_per_attempt": {
+          "notices_by_first_admission": 129,
+          "recoverable_cases": 204,
+          "notices_during_persistent_loss": 12,
+          "persistent_cases": 12,
+          "first_notice_range_ticks": [
+            9,
+            17
+          ]
+        }
+      },
+      "12": {
+        "continuous": {
+          "notices_by_first_admission": 158,
+          "recoverable_cases": 204,
+          "notices_during_persistent_loss": 12,
+          "persistent_cases": 12,
+          "first_notice_range_ticks": [
+            13,
+            13
+          ]
+        },
+        "per_attempt": {
+          "notices_by_first_admission": 0,
+          "recoverable_cases": 204,
+          "notices_during_persistent_loss": 1,
+          "persistent_cases": 12,
+          "first_notice_range_ticks": [
+            13,
+            13
+          ]
+        },
+        "capped_per_attempt": {
+          "notices_by_first_admission": 60,
+          "recoverable_cases": 204,
+          "notices_during_persistent_loss": 12,
+          "persistent_cases": 12,
+          "first_notice_range_ticks": [
+            13,
+            25
+          ]
+        }
+      }
+    },
+    "witnesses": [
+      {
+        "family": "clean_restart",
+        "budget": 8,
+        "retry_gap": 0,
+        "retry_count": 0,
+        "reset_checks": 2,
+        "queue_delay": 0,
+        "reset_ticks": "0",
+        "first_admitted_tick": 5,
+        "queued_rejections": 1,
+        "continuous": null,
+        "per_attempt": null,
+        "capped_per_attempt": null
+      },
+      {
+        "family": "retry_then_recover",
+        "budget": 8,
+        "retry_gap": 6,
+        "retry_count": 1,
+        "reset_checks": 2,
+        "queue_delay": 0,
+        "reset_ticks": "0 6",
+        "first_admitted_tick": 11,
+        "queued_rejections": 1,
+        "continuous": 9,
+        "per_attempt": null,
+        "capped_per_attempt": null
+      },
+      {
+        "family": "reset_stalled",
+        "budget": 8,
+        "retry_gap": 0,
+        "retry_count": 0,
+        "reset_checks": null,
+        "queue_delay": null,
+        "reset_ticks": "0",
+        "first_admitted_tick": null,
+        "queued_rejections": 1,
+        "continuous": 9,
+        "per_attempt": 9,
+        "capped_per_attempt": 9
+      },
+      {
+        "family": "persistent_retry",
+        "budget": 8,
+        "retry_gap": 6,
+        "retry_count": 10,
+        "reset_checks": null,
+        "queue_delay": null,
+        "reset_ticks": "0 6 12 18 24 30 36 42 48 54 60",
+        "first_admitted_tick": null,
+        "queued_rejections": 1,
+        "continuous": 9,
+        "per_attempt": null,
+        "capped_per_attempt": 17
+      },
+      {
+        "family": "persistent_retry",
+        "budget": 8,
+        "retry_gap": 9,
+        "retry_count": 7,
+        "reset_checks": null,
+        "queue_delay": null,
+        "reset_ticks": "0 9 18 27 36 45 54 63",
+        "first_admitted_tick": null,
+        "queued_rejections": 1,
+        "continuous": 9,
+        "per_attempt": null,
+        "capped_per_attempt": 17
+      },
+      {
+        "family": "persistent_retry",
+        "budget": 8,
+        "retry_gap": 10,
+        "retry_count": 6,
+        "reset_checks": null,
+        "queue_delay": null,
+        "reset_ticks": "0 10 20 30 40 50 60",
+        "first_admitted_tick": null,
+        "queued_rejections": 1,
+        "continuous": 9,
+        "per_attempt": 9,
+        "capped_per_attempt": 9
+      }
+    ]
+  }
+}

@@ -1,5 +1,10 @@
 # Local validation — 4 November 2026
 
+The [restart policy comparison](docs/RESTART_POLICY.md) replays 864 synthetic
+cases through the compiled C watchdog on Windows. It checks C outcomes at
+two clock origins and compares notification times with two reference policies.
+[Case evidence and compiler details](results/restart-policy/summary.json)
+
 The 6 November first-sample watchdog update includes a separate
 [validation matrix](docs/ACQUISITION.md) and
 [native and Cortex-M4 evidence](results/acquisition/acquisition.json).

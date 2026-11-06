@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.1 — 6 November 2026
+
+- Add a source-grounded IMU restart replay with the compiled C watchdog and
+  two timeout baselines. Record the notification trade-off and the result at
+  a matched total deadline.
+- Record 864 case outcomes, clock-wrap checks and rejected pre-reset samples.
+  Reproduce the archived measurements in CI.
+
 ## 0.3.0 — 6 November 2026
 
 - Add a first-sample watchdog for startup and producer restart. Its deadline,

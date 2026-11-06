@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(flight_fdir_qualification_lab VERSION 0.3.0 LANGUAGES C)
+project(flight_fdir_qualification_lab VERSION 0.3.1 LANGUAGES C)
 if(ZIG_EXECUTABLE)
   set(CMAKE_C_ARCHIVE_CREATE "<CMAKE_AR> ar qc <TARGET> <LINK_FLAGS> <OBJECTS>")
   set(CMAKE_C_ARCHIVE_APPEND "<CMAKE_AR> ar q <TARGET> <LINK_FLAGS> <OBJECTS>")

@@ -67,6 +67,19 @@ channel in both tested builds. [Integration and boundary rules](docs/ACQUISITION
 python tools/run_acquisition.py
 ```
 
+### Restart policy comparison
+
+An IMU restart model based on the open F Prime component compares the C
+watchdog with a per-attempt timeout and a per-attempt timeout with a total cap.
+The uncapped policy can postpone a notice throughout repeated resets. At an
+equal total deadline, the capped baseline and the C watchdog agreed in all
+**864 synthetic cases**. [Experiment, trade-off and limits](docs/RESTART_POLICY.md) ·
+[Raw cases](results/restart-policy/cases.csv)
+
+```sh
+python tools/run_restart_policy.py --check
+```
+
 ## One useful witness
 
 Synthetic settings: alarm dwell 4 ticks, valid-data age 6 ticks, observed-gap
@@ -153,6 +166,7 @@ flowchart LR
 |---|---|
 | `include/`, `src/` | Allocation-free C monitor, tick planner and first-sample watchdog |
 | `tests/` | C boundary tests, shared-library bridge, ARM fixtures and scheduling checks |
+| `experiments/` | C replay bridge for the restart policy comparison |
 | `tools/reference.py` | Unbounded integer-time, observation-list specification |
 | `tools/cases.py` | Named streams and deterministic generators |
 | `tools/` | Build, enumerate, analyze, replay, verify and package |

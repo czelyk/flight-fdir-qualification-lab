@@ -39,9 +39,16 @@ def main():
     counters=acquisition['native']['counters']
     assert counters==acquisition['arm']['counters'] and not acquisition['physical_tests']
     assert sum(count for name,count in counters.items() if name!='cases')==counters['cases']
+    restart_path=ROOT/'results/restart-policy'
+    restart=json.loads((restart_path/'summary.json').read_text())
+    for path,digest in restart['source_sha256'].items():
+        assert hashlib.sha256((ROOT/path).read_bytes()).hexdigest()==digest,path
+    assert hashlib.sha256((restart_path/'cases.csv').read_bytes()).hexdigest()==restart['cases_csv_sha256']
+    assert restart['synthetic_inputs'] and not restart['physical_tests']
     print(json.dumps(dict(pass_all=True,hashed_files=len(manifest['files']),trace_comparisons=summary['total_trace_comparisons'],
                          event_comparisons=summary['total_event_comparisons'],arm_traces=arm['traces'],
                          tickless_traces=comparison['traces'],acquisition_cases=counters['cases'],
+                         restart_cases=restart['measurement']['cases'],
                          physical_tests=False),indent=2))
 
 if __name__=='__main__':main()
