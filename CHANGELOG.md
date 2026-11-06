@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.3.0 — 6 November 2026
+
+- Add a first-sample watchdog for startup and producer restart. Its deadline,
+  state and missed-window counter are separate from sensor fault qualification.
+- Schedule first-sample expiry using the one-shot planner. Keep the original
+  wait across repeated producer restart notifications until a sample is admitted.
+- Add Windows and emulated Cortex-M4 results for 1,248 deadline and admission
+  cases, plus direct restart, clock and alarm retention checks.
+
 ## 0.2.0 — 6 November 2026
 
 - Add a C99 one-shot tick planner for data expiry, hold completion and

@@ -19,6 +19,8 @@ jobs:
         run: python tools/run_tests.py
       - name: Compare one-shot and periodic monitor ticks
         run: python tools/run_tickless.py
+      - name: Check first-sample deadlines and producer restarts
+        run: python tools/run_acquisition.py
       - name: Verify checked-in evidence
         run: python tools/verify.py
       - name: Replay the missing-data witness

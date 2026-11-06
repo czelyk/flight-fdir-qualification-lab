@@ -47,6 +47,8 @@ Quality is UNKNOWN, FRESH, STALE or INVALID. Startup with no data remains UNKNOW
 Detecting an outage during input silence requires tick delivery. The caller can
 poll or use the [one-shot tick planner](TICKLESS.md). Actual expiry may be noticed
 later than the numeric boundary if the caller runs late.
+Use the optional [first-sample watchdog](ACQUISITION.md) to distinguish waiting
+for the first admitted sample from a missed startup or restart window.
 
 Raw bad evidence is value >= trip_limit; clear evidence is value <= clear_limit.
 The open interval between thresholds is neutral. Neutral or opposite evidence

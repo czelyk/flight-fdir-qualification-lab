@@ -50,6 +50,23 @@ These counts measure monitor calls in the test workload. See the
 python tools/run_tickless.py
 ```
 
+## First-sample watchdog
+
+The optional C99 watchdog gives startup and producer restart an explicit
+first-sample deadline. A channel can report a missed window while the underlying
+monitor still has no usable data. Restart notifications during that wait cannot
+postpone its deadline. A valid late sample restores the acquisition state and
+leaves the missed-window counter available for telemetry.
+
+Windows and Cortex-M4 emulation matched across **1,248 synthetic cases** plus
+direct boundary checks. The watchdog and its monitor occupy **120 bytes** per
+channel in both tested builds. [Integration and boundary rules](docs/ACQUISITION.md) ·
+[Recorded results](results/acquisition/acquisition.json)
+
+```sh
+python tools/run_acquisition.py
+```
+
 ## One useful witness
 
 Synthetic settings: alarm dwell 4 ticks, valid-data age 6 ticks, observed-gap
@@ -134,8 +151,8 @@ flowchart LR
 
 | Path | Content |
 |---|---|
-| `include/`, `src/` | Allocation-free C monitor and one-shot tick planner |
-| `tests/` | C boundary tests, shared-library bridge, ARM fixture and tickless comparison |
+| `include/`, `src/` | Allocation-free C monitor, tick planner and first-sample watchdog |
+| `tests/` | C boundary tests, shared-library bridge, ARM fixtures and scheduling checks |
 | `tools/reference.py` | Unbounded integer-time, observation-list specification |
 | `tools/cases.py` | Named streams and deterministic generators |
 | `tools/` | Build, enumerate, analyze, replay, verify and package |
@@ -151,7 +168,7 @@ cmake --build build
 ctest --test-dir build --output-on-failure
 ```
 
-The CMake build includes the library, worker sketch and both C test suites.
+The CMake build includes the library, worker sketch and all three C test suites.
 Use the Python commands above for the full reference campaign.
 [Windows/Zig CMake setup](docs/BUILDING.md) and a GitHub Actions workflow are included.
 

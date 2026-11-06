@@ -25,8 +25,8 @@ cmake --build build
 ctest --test-dir build --output-on-failure
 ```
 
-CMake builds the library, bridge, compiled worker sketch, C boundary tests and
-the periodic-versus-tickless comparison.
+CMake builds the library, bridge, worker sketch and tests for the core,
+tickless planner and first-sample watchdog.
 The large reference campaign runs through the separate Python entry point. Both
 paths compile authored C with -Wall -Wextra -Werror on the tested Clang/GCC tools.
 
@@ -36,8 +36,9 @@ checks every output field. The fixture's large text section contains expected
 test vectors. The small standalone object excludes link/runtime dependencies;
 neither it nor the fixture establishes production flash use, peak stack or WCET.
 
-`examples/worker.c` illustrates serialized sample/tick calls and exposes the
-next [one-shot timer deadline](TICKLESS.md). A real port must supply its
+`examples/worker.c` illustrates serialized calls with the
+[first-sample watchdog](ACQUISITION.md) and
+[one-shot timer deadline](TICKLESS.md). A real port must supply its
 acquisition/processing clock contract, known producer epochs, transport/queue
 ownership, timer delivery and a separate response policy. Inspect both return
 codes and the quality field at integration.

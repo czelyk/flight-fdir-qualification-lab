@@ -1,5 +1,9 @@
 # Local validation — 4 November 2026
 
+The 6 November first-sample watchdog update includes a separate
+[validation matrix](docs/ACQUISITION.md) and
+[native and Cortex-M4 evidence](results/acquisition/acquisition.json).
+
 The 6 November update adds a separate [tickless validation campaign](docs/TICKLESS.md).
 Its [native and Cortex-M4 evidence](results/tickless/tickless.json) records the
 same measurements on both targets. The qualification results below are the

@@ -8,8 +8,8 @@
     },
     {
       "path": ".github/workflows/test.yml",
-      "bytes": 1145,
-      "sha256": "52872dd12edf6af58d2b021d8f7c6cf1aea89fec1e7d1be013ddb9167168da77"
+      "bytes": 1255,
+      "sha256": "bbe5b3b6d4e336d85482ad66c581b90932f560c7f1a704772f584a5bf144cdfa"
     },
     {
       "path": ".gitignore",
@@ -18,13 +18,13 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 830,
-      "sha256": "e57f10484d204f0dad4ee173f87420f4a25ad8e725b850e2bae10cafaff810cf"
+      "bytes": 1320,
+      "sha256": "f77f66415b6165f8ff8afc64902e65db2f8e7f87c070cacc0b3473f5cf6b3a34"
     },
     {
       "path": "CMakeLists.txt",
-      "bytes": 1447,
-      "sha256": "87ac8710d587624eadc90ff533364cead7b707ab23adf77eecc2beeb24523f6a"
+      "bytes": 1665,
+      "sha256": "fe981281f8682a2e387fe1ac917a0022ede59eb010951288bf2bf42c7468c402"
     },
     {
       "path": "GITHUB.md",
@@ -38,8 +38,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8303,
-      "sha256": "f07899b53caef6c4625212c1aefb440c46d850e9f6083aa24d7f39771ddea67b"
+      "bytes": 9063,
+      "sha256": "38b8b813cf024d3f7ddd0eb6fc43a43a422362e79154774104a8f03de5834493"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -48,8 +48,8 @@
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 3347,
-      "sha256": "9362050e401db2061266864f0b0d0b1cfb2b487ec65cc6fabe50427e5236c3a5"
+      "bytes": 3528,
+      "sha256": "f954f343e8a55a7efafe34046b7c2c1baf643b4662475e7f13118e214774b9b4"
     },
     {
       "path": "cmake/arm-emulation.ld",
@@ -62,14 +62,19 @@
       "sha256": "2e03b9a6e428ba128653cf02dc471b3daed3aef0164a3641bb00dad144d71deb"
     },
     {
+      "path": "docs/ACQUISITION.md",
+      "bytes": 4319,
+      "sha256": "edc937bd3ebc2087d58b17a0d3279c5fa6239b75ba6cad85bb2bd9d0a5de57e4"
+    },
+    {
       "path": "docs/BUILDING.md",
-      "bytes": 2485,
-      "sha256": "1e0536643d2e96a86fe474e3724d26e679293ccdf98b32c4b6028fc58a7e0f44"
+      "bytes": 2501,
+      "sha256": "d3b8280c97d49e5255e0783b522a98264a6b5aa6dfea4dcefafd25eab47f3582"
     },
     {
       "path": "docs/CONTRACT.md",
-      "bytes": 4125,
-      "sha256": "d7f0e6ad24061078aa1afee9785754b1a4dd998ee52b2a36f9318d1a9d65ab4c"
+      "bytes": 4276,
+      "sha256": "fb6759c854fe5a3495c286b043e3dbb42c8fb4f69bbdbef7fed7dba8c71be5f3"
     },
     {
       "path": "docs/EXPERIMENT.md",
@@ -93,8 +98,13 @@
     },
     {
       "path": "examples/worker.c",
-      "bytes": 1268,
-      "sha256": "c9894713be29534c99b6fd0582e47c1d59c90a9f687628a51107fb897ec0fc90"
+      "bytes": 1851,
+      "sha256": "b728ad276a02e2265202def4ffc329a70e97852302ee137f615890e89e4eab18"
+    },
+    {
+      "path": "include/fq_acquisition.h",
+      "bytes": 1043,
+      "sha256": "af8f63b3ddec309b10c15555412b2c5bbcde0c413fd69d323ea314008d9b05a5"
     },
     {
       "path": "include/fq_monitor.h",
@@ -125,6 +135,11 @@
       "path": "requirements-arm.txt",
       "bytes": 32,
       "sha256": "f6685caa936d6e7aa27873796c5f8f83d6fa6da825d031c3358c22e2fee1a64f"
+    },
+    {
+      "path": "results/acquisition/acquisition.json",
+      "bytes": 2621,
+      "sha256": "c36b3e4e53f22864a88298330617a60266a28911f165f4b72b985a666bd52fbb"
     },
     {
       "path": "results/arm/arm.json",
@@ -257,6 +272,11 @@
       "sha256": "be9464366afdcb951065df0547caf401096493105dd80aad356bdf316a845de0"
     },
     {
+      "path": "src/fq_acquisition.c",
+      "bytes": 1891,
+      "sha256": "af8fe252923446b65dd06d8bf1f1e0a10642d5ab23fb78f6580de8161f2613af"
+    },
+    {
       "path": "src/fq_monitor.c",
       "bytes": 4245,
       "sha256": "8584f6b3865fa890a1a02a0e76cd90d59b7ff17ff97ab4c7aeb96bf7cad1c3af"
@@ -265,6 +285,11 @@
       "path": "src/fq_tickless.c",
       "bytes": 836,
       "sha256": "56db1224dca2b54931b980697c021121f00389285afae52dad5056766574b282"
+    },
+    {
+      "path": "tests/acquisition.c",
+      "bytes": 6567,
+      "sha256": "f25a4a075d4fc61ff07fb8b6a768d0b6736c5f87fa3d89f30900807d735698ad"
     },
     {
       "path": "tests/arm_fixture.c",
@@ -337,6 +362,11 @@
       "sha256": "a5ca43a6fea09b0c5ea2fbcf065fe09a701fc400d567517317b5202d52e96b5e"
     },
     {
+      "path": "tools/run_acquisition.py",
+      "bytes": 4446,
+      "sha256": "f2995cef6dfcf39aa22210e0a5f740bb9d0aaef7a3e772e759a8dd702e5b3843"
+    },
+    {
       "path": "tools/run_arm.py",
       "bytes": 5738,
       "sha256": "6fa7a72b9528a475fcfb758caf07f67414ed4949b63d41b97ed64f2a2acea9f8"
@@ -353,8 +383,8 @@
     },
     {
       "path": "tools/verify.py",
-      "bytes": 2507,
-      "sha256": "be4b424ba0e0c19a2d6f6ac4a715dd0c6b2d653e65c1266daa5729da2c7fe3be"
+      "bytes": 3027,
+      "sha256": "8d8e60c3d8a371a4e9e924e64f371c00e6f6c331682a4a2c8a25f4b0c7a28049"
     }
   ]
 }

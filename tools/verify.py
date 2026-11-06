@@ -33,8 +33,15 @@ def main():
     assert comparison==tickless['arm']['measurements']
     assert not tickless['physical_tests'] and not tickless['target_timing']
     assert sum(p['scheduled_ticks'] for p in comparison['policies'].values())==comparison['idle_alarm_or_quality_transition_ticks']
+    acquisition=json.loads((ROOT/'results/acquisition/acquisition.json').read_text())
+    for path,digest in acquisition['source_sha256'].items():
+        assert hashlib.sha256((ROOT/path).read_bytes()).hexdigest()==digest,path
+    counters=acquisition['native']['counters']
+    assert counters==acquisition['arm']['counters'] and not acquisition['physical_tests']
+    assert sum(count for name,count in counters.items() if name!='cases')==counters['cases']
     print(json.dumps(dict(pass_all=True,hashed_files=len(manifest['files']),trace_comparisons=summary['total_trace_comparisons'],
                          event_comparisons=summary['total_event_comparisons'],arm_traces=arm['traces'],
-                         tickless_traces=comparison['traces'],physical_tests=False),indent=2))
+                         tickless_traces=comparison['traces'],acquisition_cases=counters['cases'],
+                         physical_tests=False),indent=2))
 
 if __name__=='__main__':main()
