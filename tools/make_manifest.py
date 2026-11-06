@@ -13,6 +13,6 @@ def main():
         if name=='provenance/manifest.json':continue
         p=ROOT/name;assert p.is_file() and p.stat().st_size<20_000_000,name
         files.append(dict(path=name,bytes=p.stat().st_size,sha256=hashlib.sha256(p.read_bytes()).hexdigest()))
-    (ROOT/'provenance/manifest.json').write_text(json.dumps(dict(format=1,files=files),indent=2),encoding='utf-8')
+    (ROOT/'provenance/manifest.json').write_text(json.dumps(dict(format=1,files=files),indent=2),encoding='utf-8',newline='\n')
     print('Frozen',len(files),'files')
 if __name__=='__main__':main()

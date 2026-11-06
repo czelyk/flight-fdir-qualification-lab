@@ -17,6 +17,10 @@ jobs:
           python-version: '3.12'
       - name: C implementation versus reference and wrap checks
         run: python tools/run_tests.py
+      - name: Compare one-shot and periodic monitor ticks
+        run: python tools/run_tickless.py
+      - name: Verify checked-in evidence
+        run: python tools/verify.py
       - name: Replay the missing-data witness
         run: python tools/replay.py --scenario one_sample_then_silence --policy observed
       - name: Conventional CMake build on Linux

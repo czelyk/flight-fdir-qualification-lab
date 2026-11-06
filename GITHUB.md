@@ -14,5 +14,3 @@ configuration are included. All required source/tools are public; no mission
 credentials, paid activation or hardware authentication key is required.
 
 Source ZIPs omit .git, tools/environments, binaries, build caches and working runs.
-The local folder is initialized on main without a remote or automatic commit.
-No GitHub repository, release, upload or publication was created by this task.

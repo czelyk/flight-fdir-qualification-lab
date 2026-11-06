@@ -20,12 +20,13 @@ python -m venv .venv
 .venv/Scripts/python -m pip install ninja==1.13.0
 python -c "import sys;sys.path.insert(0,'tools');from bootstrap_zig import bootstrap;print(bootstrap())"
 $repo = (Get-Location).Path.Replace('\','/')
-cmake -S . -B build -G Ninja "-DCMAKE_MAKE_PROGRAM=$repo/.venv/Scripts/ninja.exe" "-DCMAKE_TOOLCHAIN_FILE=cmake/zig-windows.cmake" "-DZIG_EXECUTABLE=$repo/.tools/zig-x86_64-windows-0.14.1/zig.exe" -DCMAKE_BUILD_TYPE=Debug
+cmake -S . -B build -G Ninja "-DCMAKE_MAKE_PROGRAM=$repo/.venv/Scripts/ninja.exe" "-DCMAKE_TOOLCHAIN_FILE=cmake/zig-windows.cmake" "-DZIG_EXECUTABLE=$repo/.tools/zig-x86_64-windows-0.14.1/zig.exe" "-DCMAKE_BUILD_TYPE=Debug"
 cmake --build build
 ctest --test-dir build --output-on-failure
 ```
 
-CMake builds the library, bridge, compiled worker sketch and C boundary tests.
+CMake builds the library, bridge, compiled worker sketch, C boundary tests and
+the periodic-versus-tickless comparison.
 The large reference campaign runs through the separate Python entry point. Both
 paths compile authored C with -Wall -Wextra -Werror on the tested Clang/GCC tools.
 
@@ -35,8 +36,8 @@ checks every output field. The fixture's large text section contains expected
 test vectors. The small standalone object excludes link/runtime dependencies;
 neither it nor the fixture establishes production flash use, peak stack or WCET.
 
-`examples/worker.c` illustrates serialized sample/tick calls only. A real port
-must supply its acquisition/processing clock contract, known producer epochs,
-transport/queue ownership, periodic tick delivery and a separate response policy.
-The component has no hardware driver, RTOS service, data persistence or recovery
-actuation. Inspect both return codes and the quality field at integration.
+`examples/worker.c` illustrates serialized sample/tick calls and exposes the
+next [one-shot timer deadline](TICKLESS.md). A real port must supply its
+acquisition/processing clock contract, known producer epochs, transport/queue
+ownership, timer delivery and a separate response policy. Inspect both return
+codes and the quality field at integration.

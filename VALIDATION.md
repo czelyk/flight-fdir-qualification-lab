@@ -1,5 +1,10 @@
 # Local validation — 4 November 2026
 
+The 6 November update adds a separate [tickless validation campaign](docs/TICKLESS.md).
+Its [native and Cortex-M4 evidence](results/tickless/tickless.json) records the
+same measurements on both targets. The qualification results below are the
+original campaign.
+
 | Check | Executed result | Evidence |
 |---|---|---|
 | Native boundary suite | Qualification, stale/invalid alarm retention, producer epoch, clearing, duplicate admission, wrap, saturation and config checks passed | `results/native/unit.log` |

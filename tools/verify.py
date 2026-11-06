@@ -26,7 +26,15 @@ def main():
     assert hashlib.sha256((ROOT/'results/arm/vectors.h').read_bytes()).hexdigest()==arm['vector_sha256']
     assert json.loads((ROOT/'results/replay/replay.json').read_text())['pass_all']
     assert json.loads((ROOT/'results/cmake/cmake-reference.json').read_text())['pass_all']
+    tickless=json.loads((ROOT/'results/tickless/tickless.json').read_text())
+    for path,digest in tickless['source_sha256'].items():
+        assert hashlib.sha256((ROOT/path).read_bytes()).hexdigest()==digest,path
+    comparison=tickless['native']['measurements']
+    assert comparison==tickless['arm']['measurements']
+    assert not tickless['physical_tests'] and not tickless['target_timing']
+    assert sum(p['scheduled_ticks'] for p in comparison['policies'].values())==comparison['idle_alarm_or_quality_transition_ticks']
     print(json.dumps(dict(pass_all=True,hashed_files=len(manifest['files']),trace_comparisons=summary['total_trace_comparisons'],
-                         event_comparisons=summary['total_event_comparisons'],arm_traces=arm['traces'],physical_tests=False),indent=2))
+                         event_comparisons=summary['total_event_comparisons'],arm_traces=arm['traces'],
+                         tickless_traces=comparison['traces'],physical_tests=False),indent=2))
 
 if __name__=='__main__':main()

@@ -34,6 +34,22 @@ actuator commands or implement a complete spacecraft fault-management system.
 [Raw named outputs, coverage counts and report](results/native/REPORT.md) ·
 [Executed validation](VALIDATION.md) · [Skeptical assessment](docs/REVIEW.md)
 
+## Tickless integration
+
+`fq_next_tick_delay()` lets the worker arm a one-shot timer for the next
+freshness expiry, held-value alarm or clear decision, or clock checkpoint.
+In 1,536 synthetic traces, Windows and Cortex-M4 emulation both reproduced
+the periodic baseline's alarm and quality transitions at the same logical
+ticks. Idle tick calls fell from **109,248 to 5,582** (94.9% fewer). The
+baseline polls at every idle tick and receives the same external inputs.
+These counts measure monitor calls in the test workload. See the
+[integration contract and measurement scope](docs/TICKLESS.md) and
+[recorded results](results/tickless/tickless.json).
+
+```sh
+python tools/run_tickless.py
+```
+
 ## One useful witness
 
 Synthetic settings: alarm dwell 4 ticks, valid-data age 6 ticks, observed-gap
@@ -99,7 +115,7 @@ flight requirement. Compiler, ELF digest and section sizes are recorded.
   preserve state through a CPU reset or identify same-tick pre-epoch packets.
 - Acquisition and processing timestamps must share a known local tick domain.
   Meaningful forward comparisons must be less than 2^31 ticks. The caller owns
-  clock synchronization, periodic polling and serialized access.
+  clock synchronization, tick delivery and serialized access.
 
 ```mermaid
 flowchart LR
@@ -118,12 +134,12 @@ flowchart LR
 
 | Path | Content |
 |---|---|
-| `include/`, `src/` | Allocation-free C monitor with no I/O |
-| `tests/` | C boundary tests, shared-library bridge and ARM fixture |
+| `include/`, `src/` | Allocation-free C monitor and one-shot tick planner |
+| `tests/` | C boundary tests, shared-library bridge, ARM fixture and tickless comparison |
 | `tools/reference.py` | Unbounded integer-time, observation-list specification |
 | `tools/cases.py` | Named streams and deterministic generators |
 | `tools/` | Build, enumerate, analyze, replay, verify and package |
-| `examples/worker.c` | Compiled integration sketch; not a hardware driver |
+| `examples/worker.c` | Compiled worker sketch with a timer deadline |
 | `results/` | Actual native, ARM, Debug CMake and replay evidence |
 | `docs/` | Full semantics, source scope, limits and next measurements |
 
@@ -135,9 +151,9 @@ cmake --build build
 ctest --test-dir build --output-on-failure
 ```
 
-The CMake target builds the C library, example and boundary test. The full
-reference campaign is the Python command above. [Windows/Zig CMake setup](docs/BUILDING.md)
-and a public CI workflow are supplied; remote GitHub Actions has not been run.
+The CMake build includes the library, worker sketch and both C test suites.
+Use the Python commands above for the full reference campaign.
+[Windows/Zig CMake setup](docs/BUILDING.md) and a GitHub Actions workflow are included.
 
 ## Spacecraft context and contribution boundary
 
@@ -155,5 +171,4 @@ settings are synthetic. Hardware behavior and operational response suitability
 remain unvalidated. See [sources](docs/SOURCES.md) and [experiment scope](docs/EXPERIMENT.md).
 
 Authored with AI assistance; local execution evidence is included. MIT license.
-[GitHub name/description](GITHUB.md) are provided; nothing has been published.
-"# flight-fdir-qualification-lab" 
+[Repository metadata](GITHUB.md) contains the GitHub description and topics.

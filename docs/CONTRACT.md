@@ -43,10 +43,10 @@ queued data at a producer restart and handle receiver-clock resets separately.
 
 ## Data quality and evidence
 
-Quality is UNKNOWN, FRESH, STALE or INVALID. Startup with no data remains UNKNOWN;
-no first-sample arrival deadline is invented. The caller must supply ticks to
-notice an outage at all. Actual expiry may be noticed later than the numeric
-boundary if the caller polls late; no scheduling/response bound is established.
+Quality is UNKNOWN, FRESH, STALE or INVALID. Startup with no data remains UNKNOWN.
+Detecting an outage during input silence requires tick delivery. The caller can
+poll or use the [one-shot tick planner](TICKLESS.md). Actual expiry may be noticed
+later than the numeric boundary if the caller runs late.
 
 Raw bad evidence is value >= trip_limit; clear evidence is value <= clear_limit.
 The open interval between thresholds is neutral. Neutral or opposite evidence
