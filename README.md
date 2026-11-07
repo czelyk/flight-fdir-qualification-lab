@@ -80,6 +80,19 @@ equal total deadline, the capped baseline and the C watchdog agreed in all
 python tools/run_restart_policy.py --check
 ```
 
+### Samples queued across a sensor reset
+
+An optional C ingress layer checks a capture-time generation tag before
+sample admission. Across 53 modeled queue scenarios, it admitted no old
+samples after the epoch announcement. Timestamp checks alone admitted 19
+old samples and flushing only the ready queue admitted 16. A coordinated
+drain of all old work matched the tag in the fixture. [Integration rules and
+results](docs/GENERATION.md)
+
+```sh
+python tools/run_generation.py --check
+```
+
 ## One useful witness
 
 Synthetic settings: alarm dwell 4 ticks, valid-data age 6 ticks, observed-gap
@@ -164,9 +177,9 @@ flowchart LR
 
 | Path | Content |
 |---|---|
-| `include/`, `src/` | Allocation-free C monitor, tick planner and first-sample watchdog |
+| `include/`, `src/` | Allocation-free C monitor, tick planner, watchdog and generation gate |
 | `tests/` | C boundary tests, shared-library bridge, ARM fixtures and scheduling checks |
-| `experiments/` | C replay bridge for the restart policy comparison |
+| `experiments/` | C restart replay bridge and queue-policy fixture |
 | `tools/reference.py` | Unbounded integer-time, observation-list specification |
 | `tools/cases.py` | Named streams and deterministic generators |
 | `tools/` | Build, enumerate, analyze, replay, verify and package |
@@ -182,7 +195,7 @@ cmake --build build
 ctest --test-dir build --output-on-failure
 ```
 
-The CMake build includes the library, worker sketch and all three C test suites.
+The CMake build includes the library, worker sketch and four C test suites.
 Use the Python commands above for the full reference campaign.
 [Windows/Zig CMake setup](docs/BUILDING.md) and a GitHub Actions workflow are included.
 

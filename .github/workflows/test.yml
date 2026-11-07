@@ -23,6 +23,8 @@ jobs:
         run: python tools/run_acquisition.py
       - name: Reproduce the restart policy comparison
         run: python tools/run_restart_policy.py --check
+      - name: Compare sample admission across queue and reset boundaries
+        run: python tools/run_generation.py --check
       - name: Verify checked-in evidence
         run: python tools/verify.py
       - name: Replay the missing-data witness

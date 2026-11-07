@@ -1,5 +1,8 @@
 # Local validation — 4 November 2026
 
+The [generation-ingress comparison](docs/GENERATION.md) exercises 53 queue
+scenarios on Windows and Cortex-M4 emulation. [Recorded output](results/generation/generation.json)
+
 The [restart policy comparison](docs/RESTART_POLICY.md) replays 864 synthetic
 cases through the compiled C watchdog on Windows. It checks C outcomes at
 two clock origins and compares notification times with two reference policies.

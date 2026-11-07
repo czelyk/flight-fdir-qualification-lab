@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.4.0 — 6 November 2026
+
+- Add an optional generation-tag check at the C acquisition boundary.
+- Compare timestamp-only admission, a ready-only flush, coordinated drain
+  and generation tags on Windows and emulated Cortex-M4.
+
 ## 0.3.1 — 6 November 2026
 
 - Add a source-grounded IMU restart replay with the compiled C watchdog and

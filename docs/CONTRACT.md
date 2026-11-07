@@ -40,6 +40,8 @@ event. It preserves an existing alarm. Afterward ordinary sequence/acquisition
 ordering applies. This is not an authenticated producer identity or protection
 against indistinguishable same-tick old packets. Integration should drain old
 queued data at a producer restart and handle receiver-clock resets separately.
+The [optional generation ingress](GENERATION.md) can also distinguish samples
+with the same timestamp after the new generation has been announced.
 
 ## Data quality and evidence
 

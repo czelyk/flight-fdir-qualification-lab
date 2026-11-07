@@ -1,0 +1,127 @@
+{
+  "native": {
+    "compiler": "clang version 19.1.7 (https://github.com/ziglang/zig-bootstrap de1b01a8c1dddf75a560123ac1c2ab182b4830da)",
+    "build_arguments": [
+      "-std=c99",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iinclude",
+      "src/fq_monitor.c",
+      "src/fq_tickless.c",
+      "src/fq_acquisition.c",
+      "src/fq_ingress.c",
+      "experiments/generation_queue.c"
+    ],
+    "context_bytes": 128,
+    "measurements": {
+      "queue_cases": 53,
+      "comparisons": 212,
+      "clock_wrap_comparisons": 212,
+      "policies": {
+        "timestamp_only": {
+          "old_admitted": 19,
+          "new_admitted": 22,
+          "missed_windows": 12,
+          "no_new_sample_but_loss_masked": 5
+        },
+        "ready_flush": {
+          "old_admitted": 16,
+          "new_admitted": 16,
+          "missed_windows": 21,
+          "no_new_sample_but_loss_masked": 4
+        },
+        "quiescent_drain": {
+          "old_admitted": 0,
+          "new_admitted": 31,
+          "missed_windows": 22,
+          "no_new_sample_but_loss_masked": 0
+        },
+        "generation_tag": {
+          "old_admitted": 0,
+          "new_admitted": 31,
+          "missed_windows": 22,
+          "no_new_sample_but_loss_masked": 0
+        }
+      }
+    }
+  },
+  "source_sha256": {
+    "src/fq_monitor.c": "8584f6b3865fa890a1a02a0e76cd90d59b7ff17ff97ab4c7aeb96bf7cad1c3af",
+    "src/fq_tickless.c": "56db1224dca2b54931b980697c021121f00389285afae52dad5056766574b282",
+    "src/fq_acquisition.c": "af8fe252923446b65dd06d8bf1f1e0a10642d5ab23fb78f6580de8161f2613af",
+    "src/fq_ingress.c": "450bb29fc6b7e541a0773f41005f5b1bddb1a048c9f9aff771c9f470298853a2",
+    "experiments/generation_queue.c": "351563b348f798df0e228acd973d97093bb138b50001d15d36271b793812478c",
+    "include/fq_monitor.h": "77cb586af796202a23f1935a570915a6c2ded759e4b5d551f014c839fe19b147",
+    "include/fq_tickless.h": "35a87f467378dbc6bc746e9da600cc26f66d7c17294206067b9ee45d68cee7aa",
+    "include/fq_acquisition.h": "af8f63b3ddec309b10c15555412b2c5bbcde0c413fd69d323ea314008d9b05a5",
+    "include/fq_ingress.h": "4a770a83d11919a5482ffa4ebc7819b4bec085d734f01ac6d2245436cfcd77ae",
+    "cmake/arm-emulation.ld": "7836fec34ffdd6bcb1aad9ff5f0f49f6baa57f4a45234501620f31faa7a12643",
+    "tools/build.py": "5bf6bc3d2e9c5706452a99207598b56aa84a8f0b558f677750d49ba0203c6315",
+    "tools/run_generation.py": "e1f460ad2d0e3c89287999b8ec47ee18f6cf09aa68ad82932513e59c9d4102b5"
+  },
+  "physical_tests": false,
+  "arm": {
+    "compiler": "arm-none-eabi-gcc.EXE (Arm GNU Toolchain 15.2.Rel1 (Build arm-15.86)) 15.2.1 20251203",
+    "build_arguments": [
+      "-std=c99",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iinclude",
+      "-mcpu=cortex-m4",
+      "-mthumb",
+      "-ffreestanding",
+      "-fno-builtin",
+      "-DFQ_ARM_FIXTURE",
+      "-nostartfiles",
+      "-nostdlib",
+      "src/fq_monitor.c",
+      "src/fq_tickless.c",
+      "src/fq_acquisition.c",
+      "src/fq_ingress.c",
+      "experiments/generation_queue.c",
+      "-T",
+      "cmake/arm-emulation.ld",
+      "-lc",
+      "-lgcc"
+    ],
+    "context_bytes": 128,
+    "measurements": {
+      "queue_cases": 53,
+      "comparisons": 212,
+      "clock_wrap_comparisons": 212,
+      "policies": {
+        "timestamp_only": {
+          "old_admitted": 19,
+          "new_admitted": 22,
+          "missed_windows": 12,
+          "no_new_sample_but_loss_masked": 5
+        },
+        "ready_flush": {
+          "old_admitted": 16,
+          "new_admitted": 16,
+          "missed_windows": 21,
+          "no_new_sample_but_loss_masked": 4
+        },
+        "quiescent_drain": {
+          "old_admitted": 0,
+          "new_admitted": 31,
+          "missed_windows": 22,
+          "no_new_sample_but_loss_masked": 0
+        },
+        "generation_tag": {
+          "old_admitted": 0,
+          "new_admitted": 31,
+          "missed_windows": 22,
+          "no_new_sample_but_loss_masked": 0
+        }
+      }
+    },
+    "unicorn": "2.1.4",
+    "pyelftools": "0.32",
+    "elf_sha256": "7e84290b986319c3abf4ebf58aa12d2732fa1eed0c80bc5122bb56c92cb603a1"
+  }
+}

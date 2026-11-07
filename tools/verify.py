@@ -45,10 +45,15 @@ def main():
         assert hashlib.sha256((ROOT/path).read_bytes()).hexdigest()==digest,path
     assert hashlib.sha256((restart_path/'cases.csv').read_bytes()).hexdigest()==restart['cases_csv_sha256']
     assert restart['synthetic_inputs'] and not restart['physical_tests']
+    generation=json.loads((ROOT/'results/generation/generation.json').read_text())
+    for path,digest in generation['source_sha256'].items():
+        assert hashlib.sha256((ROOT/path).read_bytes()).hexdigest()==digest,path
+    queue=generation['native']['measurements']
+    assert queue==generation['arm']['measurements'] and not generation['physical_tests']
     print(json.dumps(dict(pass_all=True,hashed_files=len(manifest['files']),trace_comparisons=summary['total_trace_comparisons'],
                          event_comparisons=summary['total_event_comparisons'],arm_traces=arm['traces'],
                          tickless_traces=comparison['traces'],acquisition_cases=counters['cases'],
-                         restart_cases=restart['measurement']['cases'],
+                         restart_cases=restart['measurement']['cases'],generation_queue_cases=queue['queue_cases'],
                          physical_tests=False),indent=2))
 
 if __name__=='__main__':main()

@@ -26,7 +26,7 @@ ctest --test-dir build --output-on-failure
 ```
 
 CMake builds the library, bridge, worker sketch and tests for the core,
-tickless planner and first-sample watchdog.
+tickless planner, first-sample watchdog and generation ingress.
 The large reference campaign runs through the separate Python entry point. Both
 paths compile authored C with -Wall -Wextra -Werror on the tested Clang/GCC tools.
 
@@ -37,6 +37,7 @@ test vectors. The small standalone object excludes link/runtime dependencies;
 neither it nor the fixture establishes production flash use, peak stack or WCET.
 
 `examples/worker.c` illustrates serialized calls with the
+[generation ingress](GENERATION.md),
 [first-sample watchdog](ACQUISITION.md) and
 [one-shot timer deadline](TICKLESS.md). A real port must supply its
 acquisition/processing clock contract, known producer epochs, transport/queue
