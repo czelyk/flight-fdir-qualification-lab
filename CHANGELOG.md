@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.5.0 — 8 November 2026
+
+- Add an optional one-slot C handoff for samples arriving ahead of a reset notice.
+- Separate the producer capture boundary from the receiver processing tick.
+- Compare strict ingress, receiver staging and producer holdback across 135
+  modeled timing cases on Windows and emulated Cortex-M4.
+
 ## 0.4.0 — 6 November 2026
 
 - Add an optional generation-tag check at the C acquisition boundary.

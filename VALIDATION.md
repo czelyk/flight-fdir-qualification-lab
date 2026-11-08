@@ -1,5 +1,8 @@
 # Local validation — 4 November 2026
 
+The [delayed-notice comparison](docs/HANDOFF.md) covers 135 modeled timing
+cases on Windows and emulated Cortex-M4. [Recorded output](results/handoff/handoff.json)
+
 The [generation-ingress comparison](docs/GENERATION.md) exercises 53 queue
 scenarios on Windows and Cortex-M4 emulation. [Recorded output](results/generation/generation.json)
 

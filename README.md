@@ -93,6 +93,18 @@ results](docs/GENERATION.md)
 python tools/run_generation.py --check
 ```
 
+### Delayed reset announcements
+
+The optional handoff layer holds one fresh sample from the next generation
+until its reset notice arrives. Windows and Cortex-M4 emulation admitted
+**105 of 135** modeled first samples with the handoff and **45 of 135** with
+strict ingress. Holding the sample at the producer matched the handoff in
+this sweep. [Handoff contract and comparison](docs/HANDOFF.md)
+
+```sh
+python tools/run_handoff.py --check
+```
+
 ## One useful witness
 
 Synthetic settings: alarm dwell 4 ticks, valid-data age 6 ticks, observed-gap
@@ -177,7 +189,7 @@ flowchart LR
 
 | Path | Content |
 |---|---|
-| `include/`, `src/` | Allocation-free C monitor, tick planner, watchdog and generation gate |
+| `include/`, `src/` | Allocation-free C monitor, tick planner, watchdog and ingress options |
 | `tests/` | C boundary tests, shared-library bridge, ARM fixtures and scheduling checks |
 | `experiments/` | C restart replay bridge and queue-policy fixture |
 | `tools/reference.py` | Unbounded integer-time, observation-list specification |
@@ -195,7 +207,7 @@ cmake --build build
 ctest --test-dir build --output-on-failure
 ```
 
-The CMake build includes the library, worker sketch and four C test suites.
+The CMake build includes the library, worker sketch and five C test suites.
 Use the Python commands above for the full reference campaign.
 [Windows/Zig CMake setup](docs/BUILDING.md) and a GitHub Actions workflow are included.
 

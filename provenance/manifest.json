@@ -8,8 +8,8 @@
     },
     {
       "path": ".github/workflows/test.yml",
-      "bytes": 1490,
-      "sha256": "153b3067cd8dd3d1a537f607eb8f704598300e26d447d280417d83a90bda2855"
+      "bytes": 1592,
+      "sha256": "3dbb941af7f2f613398241006e3668ae62b08e92887b43329a4e99bd5bc388c2"
     },
     {
       "path": ".gitignore",
@@ -18,13 +18,13 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 1887,
-      "sha256": "a7e045c354fb10767270060b08a9001dfed22e8843ab3188de8c3bff26ceeb48"
+      "bytes": 2211,
+      "sha256": "a5f989485fe11e5006695681f8970009fd69f81402e073ea16c689593342708e"
     },
     {
       "path": "CMakeLists.txt",
-      "bytes": 1884,
-      "sha256": "8643e483e2ee8d7f5aab8cc0f4d61161a6861dd00db51cb351cb9ad118fde836"
+      "bytes": 2094,
+      "sha256": "8abe32e48f26eb0c7cf2c2d65dcdb195c5b6da0a9aa5e8f13e220586934cecfd"
     },
     {
       "path": "GITHUB.md",
@@ -38,8 +38,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 10143,
-      "sha256": "78004856f09b7089264eaa57f683152f91a74ade3ebcc7f15f93f9eada30eb14"
+      "bytes": 10586,
+      "sha256": "506efe9ef795176bc62f9ef67efa423a92cec0c5f610df28f57688c3998872fa"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -48,8 +48,8 @@
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 4010,
-      "sha256": "33869c75b9929f1ed5f6924f1a72d9fbd9e0fe0e1033265a7924abf4523ddf59"
+      "bytes": 4175,
+      "sha256": "25bd46023bd1c0943c3607654d291a951be93aac44d641ab33397edb566e5fe3"
     },
     {
       "path": "cmake/arm-emulation.ld",
@@ -83,8 +83,13 @@
     },
     {
       "path": "docs/GENERATION.md",
-      "bytes": 5453,
-      "sha256": "eb4177db0092fa17c16cd8e6ed5a06d49acd0c61ac2b62533b4a5d72534a9f34"
+      "bytes": 5609,
+      "sha256": "d8fdcb9f59fc2b6a2f4dd7dc2041d0ec1a63c0122a0431e8853d7db051ba933b"
+    },
+    {
+      "path": "docs/HANDOFF.md",
+      "bytes": 4461,
+      "sha256": "b6549259196dc6a92f0595d2733635502cf22e53f9b4a705fd3473c674ce4e2f"
     },
     {
       "path": "docs/RESTART_POLICY.md",
@@ -117,6 +122,11 @@
       "sha256": "351563b348f798df0e228acd973d97093bb138b50001d15d36271b793812478c"
     },
     {
+      "path": "experiments/handoff_order.c",
+      "bytes": 6255,
+      "sha256": "584aa75190083522a3485e735e62df865dbc0774078d19246c6ba7046a20d6be"
+    },
+    {
       "path": "experiments/restart_bridge.c",
       "bytes": 1057,
       "sha256": "6ca85363dd8b1814c84f5777f1d6b3f54148cb965e4ac55f604c676983f2a0ff"
@@ -125,6 +135,11 @@
       "path": "include/fq_acquisition.h",
       "bytes": 1043,
       "sha256": "af8f63b3ddec309b10c15555412b2c5bbcde0c413fd69d323ea314008d9b05a5"
+    },
+    {
+      "path": "include/fq_handoff.h",
+      "bytes": 1059,
+      "sha256": "8d6941fa3848f34bec4fbffe12dbb0c3ceee5b61a5b4fc0018729ab204f6690c"
     },
     {
       "path": "include/fq_ingress.h",
@@ -242,6 +257,11 @@
       "sha256": "01451adfcec9965d93cd75de772c5876442e79921ccfef6f7f12c91bb038f839"
     },
     {
+      "path": "results/handoff/handoff.json",
+      "bytes": 3216,
+      "sha256": "f21f63d36aaf76429de2044dcb7720795edfeb5de907baabef62c0761cd9563d"
+    },
+    {
       "path": "results/native/REPORT.md",
       "bytes": 2407,
       "sha256": "8d0c55c9c1a41cfd4dbd7cd13c7e7dfcc36c30e9ee11dd6b10b80ad3ec70e1ec"
@@ -315,6 +335,11 @@
       "path": "src/fq_acquisition.c",
       "bytes": 1891,
       "sha256": "af8fe252923446b65dd06d8bf1f1e0a10642d5ab23fb78f6580de8161f2613af"
+    },
+    {
+      "path": "src/fq_handoff.c",
+      "bytes": 2863,
+      "sha256": "d41bd678e8b7d8a74dd28181d1d80b28f64417eb609cffc0a795fc24749bc0f4"
     },
     {
       "path": "src/fq_ingress.c",
@@ -422,6 +447,11 @@
       "sha256": "e1f460ad2d0e3c89287999b8ec47ee18f6cf09aa68ad82932513e59c9d4102b5"
     },
     {
+      "path": "tools/run_handoff.py",
+      "bytes": 4984,
+      "sha256": "7118d805ed9da91db819f84d4c8082095b842f2f8286470ff094f1ea6e5ccb18"
+    },
+    {
       "path": "tools/run_restart_policy.py",
       "bytes": 10314,
       "sha256": "4f108a8129e5be125e46b9adddb6d103bbf9c5c8239eebbcaeea23ade5ba273f"
@@ -438,8 +468,8 @@
     },
     {
       "path": "tools/verify.py",
-      "bytes": 3935,
-      "sha256": "d24c0be892b7f11bd7f4b5b12eddde4a9d90dbddda967ec3481a526637c4e9b3"
+      "bytes": 4418,
+      "sha256": "7b7e47a8e87bf7d1b25d4a479fc05037917ef950bff8b02c343880d67cf71f34"
     }
   ]
 }

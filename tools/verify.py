@@ -50,10 +50,17 @@ def main():
         assert hashlib.sha256((ROOT/path).read_bytes()).hexdigest()==digest,path
     queue=generation['native']['measurements']
     assert queue==generation['arm']['measurements'] and not generation['physical_tests']
+    handoff=json.loads((ROOT/'results/handoff/handoff.json').read_text())
+    for path,digest in handoff['source_sha256'].items():
+        assert hashlib.sha256((ROOT/path).read_bytes()).hexdigest()==digest,path
+    ordering=handoff['native']['measurements']
+    assert ordering==handoff['arm']['measurements'] and not handoff['physical_tests']
+    assert ordering['staging_admitted']==ordering['producer_holdback_admitted']
     print(json.dumps(dict(pass_all=True,hashed_files=len(manifest['files']),trace_comparisons=summary['total_trace_comparisons'],
                          event_comparisons=summary['total_event_comparisons'],arm_traces=arm['traces'],
                          tickless_traces=comparison['traces'],acquisition_cases=counters['cases'],
                          restart_cases=restart['measurement']['cases'],generation_queue_cases=queue['queue_cases'],
+                         handoff_cases=ordering['cases'],
                          physical_tests=False),indent=2))
 
 if __name__=='__main__':main()

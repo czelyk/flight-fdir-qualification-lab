@@ -42,6 +42,9 @@ The [worker example](../examples/worker.c) shows the sample and epoch calls.
   reusing generation values while old packets can survive. A full receiver
   restart requires the application to reestablish the producer generation.
 
+Use the [optional one-slot handoff](HANDOFF.md) when a synchronized producer
+boundary is available and samples can reach the receiver ahead of the notice.
+
 ## Measured comparison
 
 The fixture starts from a working stream and processes the epoch before
