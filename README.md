@@ -105,6 +105,19 @@ this sweep. [Handoff contract and comparison](docs/HANDOFF.md)
 python tools/run_handoff.py --check
 ```
 
+## Comparison with NASA Limit Checker
+
+A host fixture executes three pinned NASA LC functions alongside the
+C99 monitor on 198 labeled synthetic signals. LC evaluated every tick
+with a six-evaluation freshness window matched the hold policy's exact
+first alarm on every case. Clustered captures and missing recovery
+samples exposed the costs of the different alarm rules.
+[Method and results](docs/LC_ALARM.md)
+
+```sh
+python tools/run_lc_alarm.py --check
+```
+
 ## One useful witness
 
 Synthetic settings: alarm dwell 4 ticks, valid-data age 6 ticks, observed-gap

@@ -1,5 +1,10 @@
 # Local validation — 4 November 2026
 
+The [Limit Checker alarm comparison](docs/LC_ALARM.md) executes 1,782
+policy runs on 198 synthetic signals in a native host fixture. It compiles
+three pinned LC functions and supplies a modeled single watchpoint.
+[Recorded case table](results/lc-alarm/cases.csv)
+
 The [delayed-notice comparison](docs/HANDOFF.md) covers 135 modeled timing
 cases on Windows and emulated Cortex-M4. [Recorded output](results/handoff/handoff.json)
 

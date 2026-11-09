@@ -38,18 +38,18 @@
     },
     {
       "path": "README.md",
-      "bytes": 10586,
-      "sha256": "506efe9ef795176bc62f9ef67efa423a92cec0c5f610df28f57688c3998872fa"
+      "bytes": 11046,
+      "sha256": "05d68bc341ca8fb0e4dda3da270612af00ad6eeeafd38afd7efe0a8960eb077f"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "bytes": 903,
-      "sha256": "49d86b0a9f2886dae7eac3d5b8d41db4d33c1f7a5067fa116c98b88a0af39701"
+      "bytes": 1165,
+      "sha256": "e9d856f926b46a86ac818caec5962021e38b5ce4bc9018e26b1b9b03b269ef74"
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 4175,
-      "sha256": "25bd46023bd1c0943c3607654d291a951be93aac44d641ab33397edb566e5fe3"
+      "bytes": 4439,
+      "sha256": "854a46a30977a29d07554b75e296bfd1e962a082ee0b658d4b8646e970d30e01"
     },
     {
       "path": "cmake/arm-emulation.ld",
@@ -92,6 +92,11 @@
       "sha256": "b6549259196dc6a92f0595d2733635502cf22e53f9b4a705fd3473c674ce4e2f"
     },
     {
+      "path": "docs/LC_ALARM.md",
+      "bytes": 5251,
+      "sha256": "3b4c03094bfe599508f1bbff3a49ff79b7667f184111be4871c7ac2e720a7d99"
+    },
+    {
       "path": "docs/RESTART_POLICY.md",
       "bytes": 5785,
       "sha256": "f053a6b0ddde2ace7af5e595609b83526fbf35865e612441d6677436be9140f6"
@@ -125,6 +130,11 @@
       "path": "experiments/handoff_order.c",
       "bytes": 6255,
       "sha256": "584aa75190083522a3485e735e62df865dbc0774078d19246c6ba7046a20d6be"
+    },
+    {
+      "path": "experiments/lc_alarm_probe.c",
+      "bytes": 3153,
+      "sha256": "08e14c9e17b7a768e3934219ca6d36e98a01cf4af8e965cbc4bc3f3a0193d14e"
     },
     {
       "path": "experiments/restart_bridge.c",
@@ -260,6 +270,16 @@
       "path": "results/handoff/handoff.json",
       "bytes": 3216,
       "sha256": "f21f63d36aaf76429de2044dcb7720795edfeb5de907baabef62c0761cd9563d"
+    },
+    {
+      "path": "results/lc-alarm/cases.csv",
+      "bytes": 276115,
+      "sha256": "4f0fa5682de6ea3741fcb24922bcbcb6e3d3250dcbed32ca3f6cac96dfa712a8"
+    },
+    {
+      "path": "results/lc-alarm/summary.json",
+      "bytes": 24264,
+      "sha256": "dc77aaee3461d7fb186f9b8097bf47855694ef8594a1f8ec68b3dfb131dd08c5"
     },
     {
       "path": "results/native/REPORT.md",
@@ -450,6 +470,11 @@
       "path": "tools/run_handoff.py",
       "bytes": 4984,
       "sha256": "7118d805ed9da91db819f84d4c8082095b842f2f8286470ff094f1ea6e5ccb18"
+    },
+    {
+      "path": "tools/run_lc_alarm.py",
+      "bytes": 11308,
+      "sha256": "5773da857b06c93df61638924246cb871bc6ccb55a968ddba8b8a630c057fbdf"
     },
     {
       "path": "tools/run_restart_policy.py",

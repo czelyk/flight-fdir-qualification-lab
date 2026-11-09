@@ -1,0 +1,1005 @@
+{
+  "revision": "c9104f85b3a9b795be5c67702c8e190b36e4cdd5",
+  "upstream_sources": {
+    "lc_action.c": {
+      "url": "https://raw.githubusercontent.com/nasa/LC/c9104f85b3a9b795be5c67702c8e190b36e4cdd5/fsw/src/lc_action.c",
+      "sha256": "d1f94ee481ea3de89fcf5e5169e5fcb55c7ead08864b9a15bd06c7e2696136dd",
+      "functions": [
+        "LC_SampleSingleAP",
+        "LC_SampleAPs"
+      ]
+    },
+    "lc_cmds.c": {
+      "url": "https://raw.githubusercontent.com/nasa/LC/c9104f85b3a9b795be5c67702c8e190b36e4cdd5/fsw/src/lc_cmds.c",
+      "sha256": "6578bc4524755f0df72c37270c8df9b9e3c4ce8294a8b91d03c6a76f424ce4f6",
+      "functions": [
+        "LC_SampleAPReq"
+      ]
+    }
+  },
+  "compiler": "clang version 19.1.7 (https://github.com/ziglang/zig-bootstrap de1b01a8c1dddf75a560123ac1c2ab182b4830da)",
+  "signals": 198,
+  "policy_runs": 1782,
+  "physical_tests": false,
+  "config": {
+    "trip_limit": 20,
+    "clear_limit": 10,
+    "trip_ticks": 4,
+    "clear_ticks": 4,
+    "max_age": 5,
+    "max_gap": 4,
+    "samples": 3
+  },
+  "nominal_sample_period": 2,
+  "synthetic_inputs": true,
+  "lc_settings": {
+    "lc_age_1": {
+      "period": 2,
+      "age": 1,
+      "evaluations": 3
+    },
+    "lc_age_2": {
+      "period": 2,
+      "age": 2,
+      "evaluations": 3
+    },
+    "lc_age_3": {
+      "period": 2,
+      "age": 3,
+      "evaluations": 3
+    },
+    "lc_fast_age_2": {
+      "period": 1,
+      "age": 2,
+      "evaluations": 5
+    },
+    "lc_fast_age_4": {
+      "period": 1,
+      "age": 4,
+      "evaluations": 5
+    },
+    "lc_fast_age_6": {
+      "period": 1,
+      "age": 6,
+      "evaluations": 5
+    }
+  },
+  "nominal_control_first_alarm": 12,
+  "stats": {
+    "all": {
+      "count": {
+        "timely": 72,
+        "before_dwell": 13,
+        "after_recovery": 6,
+        "missed": 22,
+        "no_alarm_expected": 85,
+        "max_timely_extra_delay": 9
+      },
+      "hold": {
+        "timely": 87,
+        "before_dwell": 0,
+        "after_recovery": 30,
+        "missed": 11,
+        "no_alarm_expected": 70,
+        "max_timely_extra_delay": 7
+      },
+      "observed": {
+        "timely": 74,
+        "before_dwell": 0,
+        "after_recovery": 6,
+        "missed": 30,
+        "no_alarm_expected": 88,
+        "max_timely_extra_delay": 9
+      },
+      "lc_age_1": {
+        "timely": 45,
+        "before_dwell": 0,
+        "after_recovery": 7,
+        "missed": 58,
+        "no_alarm_expected": 88,
+        "max_timely_extra_delay": 9
+      },
+      "lc_age_2": {
+        "timely": 77,
+        "before_dwell": 0,
+        "after_recovery": 18,
+        "missed": 21,
+        "no_alarm_expected": 82,
+        "max_timely_extra_delay": 9
+      },
+      "lc_age_3": {
+        "timely": 84,
+        "before_dwell": 0,
+        "after_recovery": 28,
+        "missed": 13,
+        "no_alarm_expected": 73,
+        "max_timely_extra_delay": 7
+      },
+      "lc_fast_age_2": {
+        "timely": 37,
+        "before_dwell": 0,
+        "after_recovery": 5,
+        "missed": 68,
+        "no_alarm_expected": 88,
+        "max_timely_extra_delay": 9
+      },
+      "lc_fast_age_4": {
+        "timely": 80,
+        "before_dwell": 0,
+        "after_recovery": 20,
+        "missed": 19,
+        "no_alarm_expected": 79,
+        "max_timely_extra_delay": 9
+      },
+      "lc_fast_age_6": {
+        "timely": 87,
+        "before_dwell": 0,
+        "after_recovery": 30,
+        "missed": 11,
+        "no_alarm_expected": 70,
+        "max_timely_extra_delay": 7
+      }
+    },
+    "aligned": {
+      "count": {
+        "timely": 30,
+        "before_dwell": 0,
+        "after_recovery": 3,
+        "missed": 17,
+        "no_alarm_expected": 40,
+        "max_timely_extra_delay": 9
+      },
+      "hold": {
+        "timely": 37,
+        "before_dwell": 0,
+        "after_recovery": 17,
+        "missed": 8,
+        "no_alarm_expected": 28,
+        "max_timely_extra_delay": 7
+      },
+      "observed": {
+        "timely": 30,
+        "before_dwell": 0,
+        "after_recovery": 3,
+        "missed": 17,
+        "no_alarm_expected": 40,
+        "max_timely_extra_delay": 9
+      },
+      "lc_age_1": {
+        "timely": 30,
+        "before_dwell": 0,
+        "after_recovery": 3,
+        "missed": 17,
+        "no_alarm_expected": 40,
+        "max_timely_extra_delay": 9
+      },
+      "lc_age_2": {
+        "timely": 30,
+        "before_dwell": 0,
+        "after_recovery": 7,
+        "missed": 16,
+        "no_alarm_expected": 37,
+        "max_timely_extra_delay": 9
+      },
+      "lc_age_3": {
+        "timely": 37,
+        "before_dwell": 0,
+        "after_recovery": 17,
+        "missed": 8,
+        "no_alarm_expected": 28,
+        "max_timely_extra_delay": 7
+      },
+      "lc_fast_age_2": {
+        "timely": 30,
+        "before_dwell": 0,
+        "after_recovery": 3,
+        "missed": 17,
+        "no_alarm_expected": 40,
+        "max_timely_extra_delay": 9
+      },
+      "lc_fast_age_4": {
+        "timely": 30,
+        "before_dwell": 0,
+        "after_recovery": 7,
+        "missed": 16,
+        "no_alarm_expected": 37,
+        "max_timely_extra_delay": 9
+      },
+      "lc_fast_age_6": {
+        "timely": 37,
+        "before_dwell": 0,
+        "after_recovery": 17,
+        "missed": 8,
+        "no_alarm_expected": 28,
+        "max_timely_extra_delay": 7
+      }
+    },
+    "off_grid": {
+      "count": {
+        "timely": 42,
+        "before_dwell": 13,
+        "after_recovery": 3,
+        "missed": 5,
+        "no_alarm_expected": 45,
+        "max_timely_extra_delay": 2
+      },
+      "hold": {
+        "timely": 50,
+        "before_dwell": 0,
+        "after_recovery": 13,
+        "missed": 3,
+        "no_alarm_expected": 42,
+        "max_timely_extra_delay": 3
+      },
+      "observed": {
+        "timely": 44,
+        "before_dwell": 0,
+        "after_recovery": 3,
+        "missed": 13,
+        "no_alarm_expected": 48,
+        "max_timely_extra_delay": 5
+      },
+      "lc_age_1": {
+        "timely": 15,
+        "before_dwell": 0,
+        "after_recovery": 4,
+        "missed": 41,
+        "no_alarm_expected": 48,
+        "max_timely_extra_delay": 3
+      },
+      "lc_age_2": {
+        "timely": 47,
+        "before_dwell": 0,
+        "after_recovery": 11,
+        "missed": 5,
+        "no_alarm_expected": 45,
+        "max_timely_extra_delay": 3
+      },
+      "lc_age_3": {
+        "timely": 47,
+        "before_dwell": 0,
+        "after_recovery": 11,
+        "missed": 5,
+        "no_alarm_expected": 45,
+        "max_timely_extra_delay": 3
+      },
+      "lc_fast_age_2": {
+        "timely": 7,
+        "before_dwell": 0,
+        "after_recovery": 2,
+        "missed": 51,
+        "no_alarm_expected": 48,
+        "max_timely_extra_delay": 2
+      },
+      "lc_fast_age_4": {
+        "timely": 50,
+        "before_dwell": 0,
+        "after_recovery": 13,
+        "missed": 3,
+        "no_alarm_expected": 42,
+        "max_timely_extra_delay": 3
+      },
+      "lc_fast_age_6": {
+        "timely": 50,
+        "before_dwell": 0,
+        "after_recovery": 13,
+        "missed": 3,
+        "no_alarm_expected": 42,
+        "max_timely_extra_delay": 3
+      }
+    },
+    "nominal": {
+      "count": {
+        "timely": 9,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 1
+      },
+      "hold": {
+        "timely": 9,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 1
+      },
+      "observed": {
+        "timely": 9,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 1
+      },
+      "lc_age_1": {
+        "timely": 9,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 1
+      },
+      "lc_age_2": {
+        "timely": 9,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 1
+      },
+      "lc_age_3": {
+        "timely": 9,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 1
+      },
+      "lc_fast_age_2": {
+        "timely": 9,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 1
+      },
+      "lc_fast_age_4": {
+        "timely": 9,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 1
+      },
+      "lc_fast_age_6": {
+        "timely": 9,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 1
+      }
+    },
+    "lag_2": {
+      "count": {
+        "timely": 6,
+        "before_dwell": 0,
+        "after_recovery": 3,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 3
+      },
+      "hold": {
+        "timely": 6,
+        "before_dwell": 0,
+        "after_recovery": 3,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 3
+      },
+      "observed": {
+        "timely": 6,
+        "before_dwell": 0,
+        "after_recovery": 3,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 3
+      },
+      "lc_age_1": {
+        "timely": 6,
+        "before_dwell": 0,
+        "after_recovery": 3,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 3
+      },
+      "lc_age_2": {
+        "timely": 6,
+        "before_dwell": 0,
+        "after_recovery": 3,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 3
+      },
+      "lc_age_3": {
+        "timely": 6,
+        "before_dwell": 0,
+        "after_recovery": 3,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 3
+      },
+      "lc_fast_age_2": {
+        "timely": 6,
+        "before_dwell": 0,
+        "after_recovery": 3,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 3
+      },
+      "lc_fast_age_4": {
+        "timely": 6,
+        "before_dwell": 0,
+        "after_recovery": 3,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 3
+      },
+      "lc_fast_age_6": {
+        "timely": 6,
+        "before_dwell": 0,
+        "after_recovery": 3,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 3
+      }
+    },
+    "drop_onset": {
+      "count": {
+        "timely": 4,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 6,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 7
+      },
+      "hold": {
+        "timely": 4,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 6,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 7
+      },
+      "observed": {
+        "timely": 4,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 6,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 7
+      },
+      "lc_age_1": {
+        "timely": 4,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 6,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 7
+      },
+      "lc_age_2": {
+        "timely": 4,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 6,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 7
+      },
+      "lc_age_3": {
+        "timely": 4,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 6,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 7
+      },
+      "lc_fast_age_2": {
+        "timely": 4,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 6,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 7
+      },
+      "lc_fast_age_4": {
+        "timely": 4,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 6,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 7
+      },
+      "lc_fast_age_6": {
+        "timely": 4,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 6,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 7
+      }
+    },
+    "drop_after_first": {
+      "count": {
+        "timely": 2,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 8,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 9
+      },
+      "hold": {
+        "timely": 9,
+        "before_dwell": 0,
+        "after_recovery": 7,
+        "missed": 0,
+        "no_alarm_expected": 2,
+        "max_timely_extra_delay": 1
+      },
+      "observed": {
+        "timely": 2,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 8,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 9
+      },
+      "lc_age_1": {
+        "timely": 2,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 8,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 9
+      },
+      "lc_age_2": {
+        "timely": 2,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 8,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 9
+      },
+      "lc_age_3": {
+        "timely": 9,
+        "before_dwell": 0,
+        "after_recovery": 7,
+        "missed": 0,
+        "no_alarm_expected": 2,
+        "max_timely_extra_delay": 1
+      },
+      "lc_fast_age_2": {
+        "timely": 2,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 8,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 9
+      },
+      "lc_fast_age_4": {
+        "timely": 2,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 8,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 9
+      },
+      "lc_fast_age_6": {
+        "timely": 9,
+        "before_dwell": 0,
+        "after_recovery": 7,
+        "missed": 0,
+        "no_alarm_expected": 2,
+        "max_timely_extra_delay": 1
+      }
+    },
+    "drop_recovery": {
+      "count": {
+        "timely": 9,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 1
+      },
+      "hold": {
+        "timely": 9,
+        "before_dwell": 0,
+        "after_recovery": 7,
+        "missed": 0,
+        "no_alarm_expected": 2,
+        "max_timely_extra_delay": 1
+      },
+      "observed": {
+        "timely": 9,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 1
+      },
+      "lc_age_1": {
+        "timely": 9,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 1
+      },
+      "lc_age_2": {
+        "timely": 9,
+        "before_dwell": 0,
+        "after_recovery": 4,
+        "missed": 0,
+        "no_alarm_expected": 5,
+        "max_timely_extra_delay": 1
+      },
+      "lc_age_3": {
+        "timely": 9,
+        "before_dwell": 0,
+        "after_recovery": 7,
+        "missed": 0,
+        "no_alarm_expected": 2,
+        "max_timely_extra_delay": 1
+      },
+      "lc_fast_age_2": {
+        "timely": 9,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 1
+      },
+      "lc_fast_age_4": {
+        "timely": 9,
+        "before_dwell": 0,
+        "after_recovery": 4,
+        "missed": 0,
+        "no_alarm_expected": 5,
+        "max_timely_extra_delay": 1
+      },
+      "lc_fast_age_6": {
+        "timely": 9,
+        "before_dwell": 0,
+        "after_recovery": 7,
+        "missed": 0,
+        "no_alarm_expected": 2,
+        "max_timely_extra_delay": 1
+      }
+    },
+    "lag_1": {
+      "count": {
+        "timely": 7,
+        "before_dwell": 0,
+        "after_recovery": 2,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 2
+      },
+      "hold": {
+        "timely": 7,
+        "before_dwell": 0,
+        "after_recovery": 2,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 2
+      },
+      "observed": {
+        "timely": 7,
+        "before_dwell": 0,
+        "after_recovery": 2,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 2
+      },
+      "lc_age_1": {
+        "timely": 6,
+        "before_dwell": 0,
+        "after_recovery": 3,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 3
+      },
+      "lc_age_2": {
+        "timely": 6,
+        "before_dwell": 0,
+        "after_recovery": 3,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 3
+      },
+      "lc_age_3": {
+        "timely": 6,
+        "before_dwell": 0,
+        "after_recovery": 3,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 3
+      },
+      "lc_fast_age_2": {
+        "timely": 7,
+        "before_dwell": 0,
+        "after_recovery": 2,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 2
+      },
+      "lc_fast_age_4": {
+        "timely": 7,
+        "before_dwell": 0,
+        "after_recovery": 2,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 2
+      },
+      "lc_fast_age_6": {
+        "timely": 7,
+        "before_dwell": 0,
+        "after_recovery": 2,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 2
+      }
+    },
+    "alternate_lag": {
+      "count": {
+        "timely": 8,
+        "before_dwell": 0,
+        "after_recovery": 1,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 2
+      },
+      "hold": {
+        "timely": 8,
+        "before_dwell": 0,
+        "after_recovery": 1,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 2
+      },
+      "observed": {
+        "timely": 8,
+        "before_dwell": 0,
+        "after_recovery": 1,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 2
+      },
+      "lc_age_1": {
+        "timely": 0,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 10,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": null
+      },
+      "lc_age_2": {
+        "timely": 8,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 2,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 3
+      },
+      "lc_age_3": {
+        "timely": 8,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 2,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 3
+      },
+      "lc_fast_age_2": {
+        "timely": 0,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 10,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": null
+      },
+      "lc_fast_age_4": {
+        "timely": 8,
+        "before_dwell": 0,
+        "after_recovery": 1,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 2
+      },
+      "lc_fast_age_6": {
+        "timely": 8,
+        "before_dwell": 0,
+        "after_recovery": 1,
+        "missed": 1,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 2
+      }
+    },
+    "irregular_capture": {
+      "count": {
+        "timely": 10,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 0,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 0
+      },
+      "hold": {
+        "timely": 10,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 0,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 0
+      },
+      "observed": {
+        "timely": 10,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 0,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 0
+      },
+      "lc_age_1": {
+        "timely": 9,
+        "before_dwell": 0,
+        "after_recovery": 1,
+        "missed": 0,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 1
+      },
+      "lc_age_2": {
+        "timely": 9,
+        "before_dwell": 0,
+        "after_recovery": 1,
+        "missed": 0,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 1
+      },
+      "lc_age_3": {
+        "timely": 9,
+        "before_dwell": 0,
+        "after_recovery": 1,
+        "missed": 0,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 1
+      },
+      "lc_fast_age_2": {
+        "timely": 0,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 10,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": null
+      },
+      "lc_fast_age_4": {
+        "timely": 10,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 0,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 0
+      },
+      "lc_fast_age_6": {
+        "timely": 10,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 0,
+        "no_alarm_expected": 8,
+        "max_timely_extra_delay": 0
+      }
+    },
+    "clustered_capture": {
+      "count": {
+        "timely": 17,
+        "before_dwell": 13,
+        "after_recovery": 0,
+        "missed": 3,
+        "no_alarm_expected": 21,
+        "max_timely_extra_delay": 1
+      },
+      "hold": {
+        "timely": 25,
+        "before_dwell": 0,
+        "after_recovery": 10,
+        "missed": 1,
+        "no_alarm_expected": 18,
+        "max_timely_extra_delay": 3
+      },
+      "observed": {
+        "timely": 19,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 11,
+        "no_alarm_expected": 24,
+        "max_timely_extra_delay": 5
+      },
+      "lc_age_1": {
+        "timely": 0,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 30,
+        "no_alarm_expected": 24,
+        "max_timely_extra_delay": null
+      },
+      "lc_age_2": {
+        "timely": 24,
+        "before_dwell": 0,
+        "after_recovery": 7,
+        "missed": 2,
+        "no_alarm_expected": 21,
+        "max_timely_extra_delay": 3
+      },
+      "lc_age_3": {
+        "timely": 24,
+        "before_dwell": 0,
+        "after_recovery": 7,
+        "missed": 2,
+        "no_alarm_expected": 21,
+        "max_timely_extra_delay": 3
+      },
+      "lc_fast_age_2": {
+        "timely": 0,
+        "before_dwell": 0,
+        "after_recovery": 0,
+        "missed": 30,
+        "no_alarm_expected": 24,
+        "max_timely_extra_delay": null
+      },
+      "lc_fast_age_4": {
+        "timely": 25,
+        "before_dwell": 0,
+        "after_recovery": 10,
+        "missed": 1,
+        "no_alarm_expected": 18,
+        "max_timely_extra_delay": 3
+      },
+      "lc_fast_age_6": {
+        "timely": 25,
+        "before_dwell": 0,
+        "after_recovery": 10,
+        "missed": 1,
+        "no_alarm_expected": 18,
+        "max_timely_extra_delay": 3
+      }
+    }
+  },
+  "paired_first_alarm_matches": {
+    "aligned": {
+      "count_vs_lc_age_1": {
+        "cases": 90,
+        "exact": 90
+      },
+      "observed_vs_lc_age_1": {
+        "cases": 90,
+        "exact": 90
+      },
+      "hold_vs_lc_age_3": {
+        "cases": 90,
+        "exact": 90
+      },
+      "hold_vs_lc_fast_age_6": {
+        "cases": 90,
+        "exact": 90
+      },
+      "count_vs_observed": {
+        "cases": 90,
+        "exact": 90
+      }
+    },
+    "off_grid": {
+      "count_vs_lc_age_1": {
+        "cases": 108,
+        "exact": 55
+      },
+      "observed_vs_lc_age_1": {
+        "cases": 108,
+        "exact": 66
+      },
+      "hold_vs_lc_age_3": {
+        "cases": 108,
+        "exact": 82
+      },
+      "hold_vs_lc_fast_age_6": {
+        "cases": 108,
+        "exact": 108
+      },
+      "count_vs_observed": {
+        "cases": 108,
+        "exact": 81
+      }
+    }
+  },
+  "cases_csv_sha256": "4f0fa5682de6ea3741fcb24922bcbcb6e3d3250dcbed32ca3f6cac96dfa712a8"
+}
